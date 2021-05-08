@@ -1,0 +1,59 @@
+@import '../variables';
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  &-main{
+    padding-bottom: 84px;
+  }
+  .f-wrapper{
+    position: relative;
+    height: 100%;
+  }
+  &__logo{
+    width: 250px;
+  }
+  &__social{
+    font-family: 'icons';
+    position: absolute;
+    bottom: 0;
+    ul{
+      display: flex;
+      li{
+        margin-right: 40px;
+        font-size: 30px;
+        a{
+          color: $brand-blue;
+          &:hover{
+            color: $light-blue;
+          }
+        }
+      }
+    }
+  }
+  &-title{
+    font-size: 25px;
+    margin-bottom: 35px;
+    h5{
+      font-weight: 700;
+      color: $black;
+    }
+  }
+  &-list{
+    font-size: 20px;
+    ul{
+      li{
+        margin-bottom: 20px;
+        a{
+          color: $black;
+        }
+      }
+    }
+  }
+  .mini-footer{
+    min-height: 50px;
+    background-color: $brand-red;
+  }
+}

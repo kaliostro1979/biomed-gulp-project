@@ -1,11 +1,14 @@
+@import 'variables';
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Montserrat arm', sans-serif!important;
   font-size: 24px;
+  background-color: $body-color!important;
 }
 
 img{
@@ -13,13 +16,19 @@ img{
   height: auto;
 }
 
-ul{
+body ul{
   list-style: none;
+  padding: 0;
 }
 
-a{
+body a{
   text-decoration: none;
   &:hover{
     text-decoration: none;
   }
+}
+
+
+#main{
+  min-height: 100vh;
 }

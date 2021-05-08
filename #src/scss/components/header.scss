@@ -1,0 +1,110 @@
+@import "../variables";
+
+.top-header{
+  padding: 36px 0;
+  display: flex;
+  justify-content: flex-end;
+  &__result-link{
+    padding: 14px 27px 16px;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    background: linear-gradient(208deg, transparent 17px, $brand-blue 0);
+
+    a{
+      color: $white;
+      line-height: 30.47px;
+    }
+  }
+}
+
+.main-header{
+  background-color: $white;
+  padding: 30px 0;
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__wrapper__logo{
+    width: 250px;
+  }
+  &__wrapper__search{
+    display: flex;
+    &-wrapper{
+      position: relative;
+      input{
+        background: $body-color;
+        border: none;
+        padding: 9px 22px;
+        border-radius: 5px;
+        &:focus{
+          outline: none;
+        }
+      }
+      button{
+        background: transparent;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+      }
+    }
+    .user-control{
+      display: flex;
+      justify-content: space-between;
+      &__items{
+        margin-left: 40px;
+      }
+      &__bag{
+        width: 47px;
+        position: relative;
+        &-count{
+          position: absolute;
+          display: block;
+          width: 23px;
+          height: 27px;
+          line-height: 27px;
+          background-color: $icons-blue;
+          text-align: center;
+          color: $white;
+          font-size: 15px;
+          font-weight: 700;
+          top: 0;
+          right: -7px;
+          clip-path: polygon(50% 0, 100% 23%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        }
+        svg{
+          width: 100%;
+        }
+      }
+      &__language-switcher{
+        .select2-selection--single{
+          font-size: 12px!important;
+          font-weight: 700!important;
+          border: none;
+          background-color: $body-color;
+          height: 40px;
+
+          text-align: center;
+          .select2-selection__rendered{
+            padding: 0;
+            line-height: 40px;
+          }
+          .select2-selection__arrow{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.select2-container--open{
+  .custom-dropdown{
+    border: 1px solid $body-color;
+    font-size: 12px;
+    text-align: center;
+  }
+}

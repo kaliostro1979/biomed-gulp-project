@@ -1,5 +1,9 @@
 @import "mixins";
 @import "fonts";
-@import "grid";
 @import "global";
 @import "variables";
+@import "bootstrap/bootstrap.min";
+@import "components/header";
+@import "components/nav-bar";
+@import "components/footer";
+@import "components/icons";
