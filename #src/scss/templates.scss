@@ -1,0 +1,10 @@
+@import "variables";
+
+%styled-links{
+  padding: 14px 27px 16px;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  background: linear-gradient(208deg, transparent 17px, $brand-blue 0);
+  display: inline-block;
+}

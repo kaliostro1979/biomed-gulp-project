@@ -1,0 +1,19 @@
+@import "../variables";
+@import "../templates";
+
+.analyzes{
+  &-header{
+    display: flex;
+    justify-content: space-between;
+    &-tab__btn{
+      span{
+        @extend %styled-links;
+        color: $white;
+        background: linear-gradient(208deg, transparent 17px, rgba(14, 31, 45, 0.3) 0);
+        &.active{
+          background: linear-gradient(208deg, transparent 17px, $brand-blue 0);
+        }
+      }
+    }
+  }
+}

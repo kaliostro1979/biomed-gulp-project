@@ -4,6 +4,8 @@
 @import "variables";
 @import "bootstrap/bootstrap.min";
 @import "components/header";
-@import "components/nav-bar";
+@import "snippets/nav-bar";
 @import "components/footer";
-@import "components/icons";
+@import "snippets/icons";
+@import "snippets/main-slider";
+@import "snippets/analyses";

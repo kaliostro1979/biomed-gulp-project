@@ -1,16 +1,13 @@
 @import "../variables";
+@import "../templates";
 
 .top-header{
   padding: 36px 0;
   display: flex;
   justify-content: flex-end;
   &__result-link{
-    padding: 14px 27px 16px;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    background: linear-gradient(208deg, transparent 17px, $brand-blue 0);
-
+  @extend
+      %styled-links;
     a{
       color: $white;
       line-height: 30.47px;
@@ -73,7 +70,7 @@
           font-weight: 700;
           top: 0;
           right: -7px;
-          clip-path: polygon(50% 0, 100% 23%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: $hexagonal;
         }
         svg{
           width: 100%;

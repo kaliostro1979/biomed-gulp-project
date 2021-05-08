@@ -1,0 +1,74 @@
+@import "../variables";
+@import "../templates";
+
+
+.slider{
+  margin-bottom: 40px;
+  .main-slider-container{
+    padding: 40px 0 154px;
+    .swiper-pagination{
+      position: absolute;
+      bottom: 50px;
+      .swiper-pagination-bullet{
+        width: 20px;
+        height: 20px;
+        background: rgba(24, 48, 66, 0.1);
+        &.swiper-pagination-bullet-active{
+          background: $brand-red!important;
+        }
+      }
+    }
+  }
+  &-text{
+    padding: 154px 0 0;
+    &-line{
+      margin: 20px 0;
+    }
+    h1{
+      font-size: 75px;
+      font-weight: 700;
+      line-height: 91px;
+    }
+    h5{
+      font-size: 20px;
+      color: $light-blue;
+      font-weight: 600;
+    }
+    p{
+      color: rgba(30, 34, 36, 0.5);
+      letter-spacing: 2px;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 400;
+      width: 80%;
+    }
+    a{
+     @extend %styled-links;
+      color: $white;
+      margin-top: 20px;
+    }
+  }
+  &-image-wrapper{
+    filter: drop-shadow(-17px 14px 11px rgba(24, 48, 66, 0.3));
+    width: 100%;
+    height: 100%;
+    &__inner{
+      height: 100%;
+      clip-path: $hexagonal;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      picture {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        img{
+          object-fit: cover;
+          height: auto;
+          width:100%;
+        }
+      }
+    }
+  }
+}
