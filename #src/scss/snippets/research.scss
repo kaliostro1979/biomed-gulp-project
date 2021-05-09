@@ -1,0 +1,51 @@
+@import '../variables';
+
+.research{
+  &-section__title{
+    margin-bottom: 60px;
+  }
+  &-item{
+    padding: 20px;
+    background: linear-gradient(222deg, transparent 10px, $white 0);
+    &:hover{
+      box-shadow: 0px 10px 22px rgba(39, 39, 39, 0.3);
+    }
+    &__img{
+      max-width: 120px;
+      margin: 0 auto 30px;
+      padding-top: 160px;
+      position: relative;
+      picture{
+        img{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+    &__title{
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    &__desc{
+      color: rgba(30, 34, 36, 0.5);
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.05em;
+    }
+    &__link{
+      text-align: right;
+      a{
+        color: $light-blue;
+        font-size: 20px;
+        font-weight: 700;
+        &:hover{
+          color: $light-blue;
+        }
+      }
+    }
+  }
+}

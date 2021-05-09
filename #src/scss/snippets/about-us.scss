@@ -1,0 +1,49 @@
+@import '../variables';
+
+.about-us{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-top: 150px;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &__info{
+    padding: 204px 89px;
+    position: relative;
+    z-index: 2;
+    &__title{
+      h2{
+        font-size: 75px;
+        font-weight: 700;
+      }
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.05em;
+      color: rgba(30, 34, 36, 0.5);
+    }
+    &__link{
+      text-align: right;
+      a{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        color: #52A4E3;;
+        &:hover{
+          color: $light-blue;
+        }
+      }
+    }
+  }
+}
