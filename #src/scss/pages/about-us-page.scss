@@ -1,15 +1,17 @@
 @import "../variables";
 
-.about-us__section{
-  .about-us__header{
+.about-us__section {
+  .about-us__header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    .slider-text-line{
-      p{
+
+    .slider-text-line {
+      p {
         width: 85%;
       }
-      a{
+
+      a {
         float: right;
         margin-right: 40px;
         font-weight: 700;
@@ -17,8 +19,9 @@
         text-transform: lowercase;
       }
     }
-    &-img{
-      .wrapper{
+
+    &-img {
+      .wrapper {
         position: relative;
         display: flex;
         justify-content: center;
@@ -26,12 +29,14 @@
         flex-wrap: wrap;
         width: 100%;
         height: 660px;
-        .hexagon{
+
+        .hexagon {
           position: relative;
           width: 100%;
           height: 100%;
           margin: 50px 20px 70px;
-          .hexagon-shape{
+
+          .hexagon-shape {
             position: absolute;
             top: 0;
             left: 0;
@@ -39,8 +44,9 @@
             height: 100%;
             background: #000000;
             clip-path: polygon(50% 0, 100% 23%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-            picture{
-              img{
+
+            picture {
+              img {
                 position: absolute;
                 top: 0;
                 bottom: 0;
@@ -56,62 +62,147 @@
   }
 }
 
-.doctors{
-  &-header{
+
+.about-us-slider {
+  &-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &-title{
 
-    }
-    &-slider__control{
-      span{
+    &-slider__control {
+      span {
         font-family: 'icons';
+        cursor: pointer;
         font-size: 26px;
-        &:nth-child(2){
+
+        &:nth-child(2) {
           margin-left: 74px;
         }
       }
     }
   }
-  &-desc{
-    p{
+
+  &-desc {
+    p {
       color: $black;
       font-size: 18px;
       margin: 20px 0 40px;
     }
   }
-  &-items__container{
-    &__inner{
+
+  &-items__container {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    margin-bottom: 150px;
+    &__inner {
       display: flex;
       min-width: 83vw;
       overflow-x: scroll;
-      .doctors-item{
+      padding: 25px;
+
+      .about-us-slider-item {
         width: 440px;
         min-width: 440px;
         margin-right: 40px;
-        &__img{
+
+        &__img {
           background-color: $white;
+          position: relative;
+          padding-top: 260px;
+          overflow: hidden;
+
+          picture {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+          }
         }
-        &__info{
+
+        &__info {
           padding: 20px 20px 33px;
           border-radius: 6px;
-          &:hover{
+
+          span {
+            float: right;
+            color: $light-blue;
+            font-weight: 700;
+            text-transform: lowercase;
+            font-size: 20px;
+            cursor: pointer;
+          }
+
+          &.item-open {
+            .tech-slider__info__wrapper {
+              -webkit-line-clamp: unset;
+              min-height: auto;
+              max-height: 300px;
+              overflow-y: auto;
+            }
+
+            background-color: $white;
+            box-shadow: 0 0 22px rgba(39, 39, 39, 0.3);
+          }
+
+          .tech-slider__info__wrapper {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #9c9c9c;
+            text-align: left;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            text-shadow: 0 0 0 #9c9c9c;
+            min-height: 83px;
+            max-height: min-content;
+
+            .tech-desc {
+              font-size: 18px;
+              width: 100%;
+            }
+          }
+
+          &:hover {
             background-color: $white;
             box-shadow: 0px 10px 22px rgba(39, 39, 39, 0.3);
           }
-          &__title{
+
+          &__title {
             font-size: 25px;
             font-weight: 700;
             margin-bottom: 10px;
           }
-          &__desc{
+
+          &__desc {
             width: 80%;
             color: $brand-gray;
           }
         }
       }
     }
+  }
+}
+
+.about-us__certificate{
+  .certificate__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    p{
+      font-size: 18px;
+      color: $brand-gray;
+      margin-top: 20px;
+    }
+  }
+  .certificate__img{
+    width: 430px;
+    margin: 0 0 0 auto;
   }
 }
 

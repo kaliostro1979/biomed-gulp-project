@@ -2,6 +2,8 @@
 @@include('bootstrap.bundle.min.js')
 @@include('contact-select.js')
 @@include('analyses.js')
+@@include('doctors-slider.js')
+@@include('tech-slider.js')
 
 
 $(document).ready(function() {
