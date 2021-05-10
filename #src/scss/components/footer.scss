@@ -8,14 +8,15 @@
   .f-wrapper{
     position: relative;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   &__logo{
     width: 250px;
   }
   &__social{
     font-family: 'icons';
-    position: absolute;
-    bottom: 0;
     ul{
       display: flex;
       li{

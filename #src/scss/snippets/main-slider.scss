@@ -20,14 +20,16 @@
     }
   }
   &-text{
-    padding: 154px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &-line{
       margin: 20px 0;
     }
     h1{
-      font-size: 75px;
+      font-size: 4vw;
       font-weight: 700;
-      line-height: 91px;
+/*      line-height: 91px;*/
     }
     h5{
       font-size: 20px;
@@ -42,16 +44,21 @@
       font-weight: 400;
       width: 80%;
     }
-    a{
-     @extend %styled-links;
-      color: $white;
-      margin-top: 20px;
+    &-link{
+      display: flex;
+      justify-content: flex-end;
+      a{
+        @extend %styled-links;
+        color: $white;
+        margin-top: 20px;
+      }
     }
   }
   &-image-wrapper{
     filter: drop-shadow(-17px 14px 11px rgba(24, 48, 66, 0.3));
-    width: 100%;
-    height: 100%;
+    width: 32vw;
+    height: 35vw;
+    margin: 0 auto;
     &__inner{
       height: 100%;
       clip-path: $hexagonal;

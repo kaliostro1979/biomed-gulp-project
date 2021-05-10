@@ -6446,7 +6446,7 @@ fieldset:disabled .btn {
 /*HTML components*/
 
 .top-header__result-link,
-.slider-text a,
+.slider-text-link a,
 .analyzes-header-tab__btn span,
 .contact-us__form form button,
 .analyses-item .options-wrapper .add-to__cart button {
@@ -6582,6 +6582,9 @@ fieldset:disabled .btn {
 .footer .f-wrapper {
   position: relative;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__logo {
@@ -6590,8 +6593,6 @@ fieldset:disabled .btn {
 
 .footer__social {
   font-family: 'icons';
-  position: absolute;
-  bottom: 0;
 }
 
 .footer__social ul {
@@ -6727,7 +6728,7 @@ fieldset:disabled .btn {
 }
 
 .top-header__result-link,
-.slider-text a,
+.slider-text-link a,
 .analyzes-header-tab__btn span,
 .contact-us__form form button,
 .analyses-item .options-wrapper .add-to__cart button {
@@ -6763,7 +6764,9 @@ fieldset:disabled .btn {
 }
 
 .slider-text {
-  padding: 154px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slider-text-line {
@@ -6771,9 +6774,9 @@ fieldset:disabled .btn {
 }
 
 .slider-text h1 {
-  font-size: 75px;
+  font-size: 4vw;
   font-weight: 700;
-  line-height: 91px;
+  /*      line-height: 91px;*/
 }
 
 .slider-text h5 {
@@ -6791,15 +6794,21 @@ fieldset:disabled .btn {
   width: 80%;
 }
 
-.slider-text a {
+.slider-text-link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slider-text-link a {
   color: #ffffff;
   margin-top: 20px;
 }
 
 .slider-image-wrapper {
   filter: drop-shadow(-17px 14px 11px rgba(24, 48, 66, 0.3));
-  width: 100%;
-  height: 100%;
+  width: 32vw;
+  height: 35vw;
+  margin: 0 auto;
 }
 
 .slider-image-wrapper__inner {
@@ -6823,7 +6832,7 @@ fieldset:disabled .btn {
 }
 
 .top-header__result-link,
-.slider-text a,
+.slider-text-link a,
 .analyzes-header-tab__btn span,
 .contact-us__form form button,
 .analyses-item .options-wrapper .add-to__cart button {
@@ -7094,7 +7103,7 @@ fieldset:disabled .btn {
 }
 
 .top-header__result-link,
-.slider-text a,
+.slider-text-link a,
 .analyzes-header-tab__btn span,
 .contact-us__form form button,
 .analyses-item .options-wrapper .add-to__cart button {
@@ -7304,7 +7313,7 @@ fieldset:disabled .btn {
 /*Pages*/
 
 .top-header__result-link,
-.slider-text a,
+.slider-text-link a,
 .analyzes-header-tab__btn span,
 .contact-us__form form button,
 .analyses-item .options-wrapper .add-to__cart button {
@@ -7446,6 +7455,120 @@ fieldset:disabled .btn {
 .analyses-item .options-wrapper .add-to__cart button img {
   width: 47px;
   margin-left: 22px;
+}
+
+.about-us__section .about-us__header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-us__section .about-us__header .slider-text-line p {
+  width: 85%;
+}
+
+.about-us__section .about-us__header .slider-text-line a {
+  float: right;
+  margin-right: 40px;
+  font-weight: 700;
+  color: #52A4E3;
+  text-transform: lowercase;
+}
+
+.about-us__section .about-us__header-img .wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 660px;
+}
+
+.about-us__section .about-us__header-img .wrapper .hexagon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 50px 20px 70px;
+}
+
+.about-us__section .about-us__header-img .wrapper .hexagon .hexagon-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  -webkit-clip-path: polygon(50% 0, 100% 23%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 23%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.about-us__section .about-us__header-img .wrapper .hexagon .hexagon-shape picture img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.doctors-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doctors-header-slider__control span {
+  font-family: 'icons';
+  font-size: 26px;
+}
+
+.doctors-header-slider__control span:nth-child(2) {
+  margin-left: 74px;
+}
+
+.doctors-desc p {
+  color: #000000;
+  font-size: 18px;
+  margin: 20px 0 40px;
+}
+
+.doctors-items__container__inner {
+  display: flex;
+  min-width: 83vw;
+  overflow-x: scroll;
+}
+
+.doctors-items__container__inner .doctors-item {
+  width: 440px;
+  min-width: 440px;
+  margin-right: 40px;
+}
+
+.doctors-items__container__inner .doctors-item__img {
+  background-color: #ffffff;
+}
+
+.doctors-items__container__inner .doctors-item__info {
+  padding: 20px 20px 33px;
+  border-radius: 6px;
+}
+
+.doctors-items__container__inner .doctors-item__info:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 22px rgba(39, 39, 39, 0.3);
+}
+
+.doctors-items__container__inner .doctors-item__info__title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.doctors-items__container__inner .doctors-item__info__desc {
+  width: 80%;
+  color: #b0b8c0;
 }
 
 @media (min-width: 576px) {
