@@ -1,11 +1,11 @@
 @import "../variables";
 
 .about-us__section {
+  margin-bottom: 150px;
   .about-us__header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
     .slider-text-line {
       p {
         width: 85%;

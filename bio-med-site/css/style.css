@@ -7457,6 +7457,10 @@ fieldset:disabled .btn {
   margin-left: 22px;
 }
 
+.about-us__section {
+  margin-bottom: 150px;
+}
+
 .about-us__section .about-us__header {
   display: flex;
   justify-content: center;
