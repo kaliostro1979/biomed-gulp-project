@@ -97,6 +97,10 @@ $('.analyzes-header-tab__btn span').on('click', function () {
     $(this).addClass('active')
 })
 
+$('.analyses-tags ul li').on('click', function () {
+    $(this).toggleClass('selected')
+})
+
 
 $(document).ready(function() {
     $('.lang-switcher').select2({

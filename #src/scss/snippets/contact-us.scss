@@ -3,7 +3,7 @@
 
 
 .contact-us{
-  margin: 150px 0 129px;
+  margin: 150px 0 0;
   position: relative;
   &__decor{
     position: absolute;
@@ -91,6 +91,7 @@
           width: 100%;
           text-align: center;
           white-space: normal;
+          cursor: pointer;
           &:focus{
             outline: none;
           }
@@ -118,8 +119,12 @@
         li{
           padding: 12px 0 8px;
           background-color: $white;
-          border-bottom: 1px solid #1a1e21;
-          margin-bottom: 2px;
+          border-bottom: 1px solid $brand-gray;
+          cursor: pointer;
+          &:hover{
+            background-color: $brand-gray;
+            color: $white;
+          }
         }
         &.open-list{
           max-height: 1000px;

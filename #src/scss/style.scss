@@ -1,14 +1,26 @@
+/*Global*/
 @import "mixins";
 @import "fonts";
 @import "global";
+@import "media";
 @import "variables";
+
+/*Plugins*/
 @import "bootstrap/bootstrap.min";
+
+/*HTML components*/
 @import "components/header";
-@import "snippets/nav-bar";
 @import "components/footer";
+
+/*Snippets*/
+@import "snippets/nav-bar";
 @import "snippets/icons";
 @import "snippets/main-slider";
 @import "snippets/analyses";
 @import "snippets/research";
 @import "snippets/about-us";
 @import "snippets/contact-us";
+@import "snippets/pagination";
+
+/*Pages*/
+@import "pages/analyses-results";
