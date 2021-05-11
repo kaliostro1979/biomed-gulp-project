@@ -49,9 +49,11 @@
         @extend %styled-links;
         border: none;
         color: $white;
-        padding: 7px 60px;
-        max-width: 280px;
+        padding: 15px 60px!important;
+        min-width: 280px;
         float: right;
+        line-height: 30px;
+        letter-spacing: 0.05em;
       }
     }
   }
