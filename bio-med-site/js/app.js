@@ -139,6 +139,24 @@ $('.read-more__btn').on('click', function () {
     }
 })
 
+/*---- Set Single News Image ----*/
+
+$('.news-item__link').on('click', function () {
+    const style = $(this).parent().prev().attr('style')
+    window.localStorage.setItem('bgr', style)
+})
+
+function setBgr() {
+    const bgrImg = window.localStorage.getItem('bgr')
+    console.log(bgrImg);
+    if (bgrImg){
+        $('.single-news_wrapper__img').attr('style', bgrImg)
+    }
+}
+
+setBgr()
+
+
 
 $(document).ready(function() {
     $('.lang-switcher').select2({

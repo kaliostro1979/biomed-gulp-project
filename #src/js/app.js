@@ -4,6 +4,7 @@
 @@include('analyses.js')
 @@include('doctors-slider.js')
 @@include('tech-slider.js')
+@@include('news.js')
 
 
 $(document).ready(function() {
