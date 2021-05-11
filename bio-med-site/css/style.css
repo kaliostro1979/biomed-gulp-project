@@ -6449,7 +6449,9 @@ fieldset:disabled .btn {
 .slider-text-link a,
 .analyzes-header-tab__btn span,
 .contact-us__form form button,
-.analyses-item .options-wrapper .add-to__cart button {
+.analyses-item .options-wrapper .add-to__cart button,
+.user-switcher__inner .register-form form button,
+.user-switcher__inner .has-no-account-wrapper .no-account__link a {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -6731,7 +6733,9 @@ fieldset:disabled .btn {
 .slider-text-link a,
 .analyzes-header-tab__btn span,
 .contact-us__form form button,
-.analyses-item .options-wrapper .add-to__cart button {
+.analyses-item .options-wrapper .add-to__cart button,
+.user-switcher__inner .register-form form button,
+.user-switcher__inner .has-no-account-wrapper .no-account__link a {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -6835,7 +6839,9 @@ fieldset:disabled .btn {
 .slider-text-link a,
 .analyzes-header-tab__btn span,
 .contact-us__form form button,
-.analyses-item .options-wrapper .add-to__cart button {
+.analyses-item .options-wrapper .add-to__cart button,
+.user-switcher__inner .register-form form button,
+.user-switcher__inner .has-no-account-wrapper .no-account__link a {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -7106,7 +7112,9 @@ fieldset:disabled .btn {
 .slider-text-link a,
 .analyzes-header-tab__btn span,
 .contact-us__form form button,
-.analyses-item .options-wrapper .add-to__cart button {
+.analyses-item .options-wrapper .add-to__cart button,
+.user-switcher__inner .register-form form button,
+.user-switcher__inner .has-no-account-wrapper .no-account__link a {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -7318,7 +7326,9 @@ fieldset:disabled .btn {
 .slider-text-link a,
 .analyzes-header-tab__btn span,
 .contact-us__form form button,
-.analyses-item .options-wrapper .add-to__cart button {
+.analyses-item .options-wrapper .add-to__cart button,
+.user-switcher__inner .register-form form button,
+.user-switcher__inner .has-no-account-wrapper .no-account__link a {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -7783,6 +7793,146 @@ fieldset:disabled .btn {
   font-family: 'icons';
   font-size: 30px;
   color: #183042;
+}
+
+.top-header__result-link,
+.slider-text-link a,
+.analyzes-header-tab__btn span,
+.contact-us__form form button,
+.analyses-item .options-wrapper .add-to__cart button,
+.user-switcher__inner .register-form form button,
+.user-switcher__inner .has-no-account-wrapper .no-account__link a {
+  padding: 14px 27px 16px;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  background: linear-gradient(208deg, transparent 17px, #183042 0);
+  display: inline-block;
+}
+
+.login-register {
+  padding-top: 100px;
+}
+
+.login-register__title {
+  margin-bottom: 30px;
+}
+
+.login {
+  display: none;
+}
+
+.login.active {
+  display: block;
+}
+
+.register {
+  display: none;
+}
+
+.register.active {
+  display: block;
+}
+
+.user-switcher__inner .register-form form .full-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 100%;
+  height: 76px;
+}
+
+.user-switcher__inner .register-form form .full-name input {
+  margin: 0;
+}
+
+.user-switcher__inner .register-form form .full-name span {
+  font-family: 'icons';
+  display: inline-block;
+  background-color: #ffffff;
+  text-align: center;
+  min-width: 80px;
+  height: 100%;
+  margin-left: 10px;
+  font-size: 40px;
+  line-height: 70px;
+  color: #b0b8c0;
+  cursor: pointer;
+}
+
+.user-switcher__inner .register-form form .full-name span.active {
+  color: #dfbdbd;
+}
+
+.user-switcher__inner .register-form form .full-name span:hover {
+  color: #dfbdbd;
+}
+
+.user-switcher__inner .register-form form input {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 25px 31px;
+  margin-bottom: 30px;
+  line-height: 29px;
+}
+
+.user-switcher__inner .register-form form input::-moz-placeholder {
+  font-size: 24px;
+  color: #b0b8c0;
+}
+
+.user-switcher__inner .register-form form input:-ms-input-placeholder {
+  font-size: 24px;
+  color: #b0b8c0;
+}
+
+.user-switcher__inner .register-form form input::placeholder {
+  font-size: 24px;
+  color: #b0b8c0;
+}
+
+.user-switcher__inner .register-form form input:focus {
+  outline: none;
+}
+
+.user-switcher__inner .register-form form button {
+  border: none;
+  color: #ffffff;
+  padding: 11px 60px !important;
+  max-width: 280px;
+  float: right;
+}
+
+.user-switcher__inner .register-form form button:focus {
+  outline: none;
+}
+
+.user-switcher__inner .register-form form a {
+  font-size: 15px;
+  color: #52A4E3;
+}
+
+.user-switcher__inner .has-no-account-wrapper {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.user-switcher__inner .has-no-account-wrapper .no-account__text {
+  font-size: 18px;
+  color: #b0b8c0;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  margin-bottom: 38px;
+  margin-top: 20px;
+}
+
+.user-switcher__inner .has-no-account-wrapper .no-account__link a {
+  color: #ffffff;
+  background: linear-gradient(208deg, transparent 17px, #52A4E3 0);
 }
 
 @media (min-width: 576px) {

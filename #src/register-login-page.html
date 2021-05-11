@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register/Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+@@include('./html-components/_header.html')
+
+<section class="login-register">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="analyzes-header user-login">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="login-register__title">
+                                <h4> Ձեր անձնական հաշիվը </h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="analyzes-header-tab__btn user-login-switcher">
+                                <span class="active" data-name="login">ՄՈՒՏՔ</span>
+                                <span data-name="register">ԳՐԱՆՑՎԵԼ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="login user-switcher__inner active" data-name="login">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="register-form">
+                                            <form>
+                                                <input placeholder="էլ հասցե կամ հեռախոսի համար*" type="text" required/>
+                                                <input placeholder="Գաղտնաբառ*" type="password" required/>
+                                                <a href="#">Մոռացել եք Ձեր գաղտնաբառը?</a>
+                                                <button type="submit">Մուտք</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 offset-1">
+                                        <div class="has-no-account-wrapper">
+                                            <div class="has-no__account">
+                                                <div class="no-account__title">
+                                                    <h4>Չունես անձնական հաշիվ?</h4>
+                                                </div>
+                                                <div class="no-account__text">
+                                                    <p>Դուք կկարողանաք ստեղծել այն թեստի արդյունքները վերանայելուց հետո և
+                                                        ստանալ հավատարիմ հաճախորդի առավելությունները</p>
+                                                </div>
+                                                <div class="no-account__link">
+                                                    <a href="#">Հետազոտություն արդյունքները</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="register user-switcher__inner" data-name="register">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="register-form">
+                                            <form>
+                                                <div class="full-name">
+                                                    <input placeholder="Անուն Ազգանուն*" type="text" required/>
+                                                    <span class="_icon-male active"></span>
+                                                    <span class="_icon-female"></span>
+                                                </div>
+                                                <input placeholder="Ծննդյան օր ամիս տարեթիվ*" type="text" required/>
+                                                <input placeholder="էլ հասցե*" type="email" required/>
+                                                <input placeholder="հեռախոսի համար*" type="tel" required/>
+                                                <input placeholder="Գաղտնաբառ*" type="password" required/>
+                                                <input placeholder="Գաղտնաբառի կրկնողություն" type="password" required/>
+                                                <button type="submit">ՈՒղարկել</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 offset-1">
+                                        <div class="has-no-account-wrapper">
+                                            <div class="has-no__account">
+                                                <div class="no-account__title">
+                                                    <h4>Չունես անձնական հաշիվ?</h4>
+                                                </div>
+                                                <div class="no-account__text">
+                                                    <p>Դուք կկարողանաք ստեղծել այն թեստի արդյունքները վերանայելուց հետո և
+                                                        ստանալ հավատարիմ հաճախորդի առավելությունները</p>
+                                                </div>
+                                                <div class="no-account__link">
+                                                    <a href="#">Հետազոտություն արդյունքները</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('./html-components/_footer.html')
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

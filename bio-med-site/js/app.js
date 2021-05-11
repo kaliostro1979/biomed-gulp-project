@@ -148,7 +148,6 @@ $('.news-item__link').on('click', function () {
 
 function setBgr() {
     const bgrImg = window.localStorage.getItem('bgr')
-    console.log(bgrImg);
     if (bgrImg){
         $('.single-news_wrapper__img').attr('style', bgrImg)
     }
@@ -156,6 +155,24 @@ function setBgr() {
 
 setBgr()
 
+$('.user-login-switcher span').on('click', function () {
+    $('.user-login-switcher span').removeClass('active')
+    $(this).addClass('active')
+
+    const userSwitcherInner = $('.user-switcher__inner')
+
+    userSwitcherInner.each((i, el)=>{
+        $(el).removeClass('active')
+        if ($(el).data().name === $(this).data().name){
+            $(el).addClass('active')
+        }
+    })
+})
+
+$('.full-name span').on('click', function () {
+    $('.full-name span').removeClass('active')
+    $(this).addClass('active')
+})
 
 
 $(document).ready(function() {

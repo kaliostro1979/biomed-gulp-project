@@ -5,6 +5,7 @@
 @@include('doctors-slider.js')
 @@include('tech-slider.js')
 @@include('news.js')
+@@include('login-register-page.js')
 
 
 $(document).ready(function() {

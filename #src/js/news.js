@@ -8,7 +8,6 @@ $('.news-item__link').on('click', function () {
 
 function setBgr() {
     const bgrImg = window.localStorage.getItem('bgr')
-    console.log(bgrImg);
     if (bgrImg){
         $('.single-news_wrapper__img').attr('style', bgrImg)
     }
