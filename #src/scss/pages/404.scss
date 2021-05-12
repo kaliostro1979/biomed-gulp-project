@@ -1,0 +1,11 @@
+@import "../variables";
+
+.page-404{
+  width: 100vw;
+  height: 100vh;
+  background-color: $brand-red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
