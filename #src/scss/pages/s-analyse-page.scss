@@ -1,0 +1,122 @@
+@import "../variables";
+@import "../templates";
+
+.single-analyse {
+  padding-top: 100px;
+  margin-bottom: 170px;
+  .s-header {
+    &-number {
+      color: $brand-gray;
+      font-size: 15px;
+      p{
+        margin: 0;
+      }
+    }
+
+    &-category {
+      font-size: 20px;
+      color: $brand-red;
+      line-height: 24px;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    &-title {
+      color: $brand-blue;
+      font-size: 25px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
+
+    &-price {
+      font-size: 35px;
+      float: right;
+      line-height: 43px;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+      span{
+        font-family: 'icons';
+        font-size: 25px;
+      }
+    }
+  }
+
+  .s-body {
+    &-switcher {
+      color: $brand-gray;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 61px;
+      margin-top: 70px;
+      span{
+        margin-right: 40px;
+        position: relative;
+        cursor: pointer;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          bottom: -4px;
+          left: 0;
+          right: 0;
+          background-color: $brand-gray;
+        }
+        &.active{
+          color: $light-blue;
+          &:before{
+            background-color: $light-blue;
+          }
+        }
+        &:hover{
+          color: $light-blue;
+          &:before{
+            background-color: $light-blue;
+          }
+        }
+      }
+    }
+
+    &-tabs {
+      color: $brand-gray;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.05em;
+      display: none;
+      &.active{
+        display: block;
+      }
+    }
+
+    &-btn{
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      &__img{
+        width: 72px;
+        margin-right: 33px;
+      }
+      &__button{
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        @extend %styled-links;
+        border: none;
+        background: linear-gradient(208deg, transparent 17px, $light-blue 0) !important;
+        color: $white;
+        img{
+          width: 40px;
+          margin-left: 22px;
+        }
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+}

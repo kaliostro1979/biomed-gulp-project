@@ -188,6 +188,15 @@
   }
 }
 
+.show-more{
+  float: right;
+  a{
+    color: $light-blue;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
 .about-us__certificate{
   .certificate__text{
     display: flex;

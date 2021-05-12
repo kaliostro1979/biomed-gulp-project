@@ -7,6 +7,8 @@
 @@include('news.js')
 @@include('login-register-page.js')
 @@include('account-page.js')
+@@include('s-analyse.js')
+@@include('bag.js')
 
 
 $(document).ready(function() {

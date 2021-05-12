@@ -1,0 +1,186 @@
+@import "../variables";
+@import "../templates";
+
+.bag {
+  padding-top: 100px;
+  &-checkbox{
+    margin-bottom: 40px;
+  }
+  .empty-bag-row {
+    display: none;
+  }
+  .remove-all{
+    color: $brand-gray;
+    text-align: right;
+    padding-right: 35px;
+    margin-bottom: 13px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  &.empty {
+    .empty-bag-row {
+      display: flex;
+    }
+    .has-item-row{
+      display: none;
+    }
+
+    .empty-bag {
+      &__text {
+        .title {
+          margin-bottom: 20px;
+        }
+
+        .note {
+          font-size: 18px;
+          line-height: 22px;
+          letter-spacing: 0.05em;
+          margin-bottom: 65px;
+        }
+
+        .button {
+          @extend %styled-links;
+
+          a {
+            color: $white;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+          }
+        }
+      }
+    }
+
+    .empty-bag__icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .empty-bag__icon {
+        width: 245px;
+      }
+    }
+  }
+  &-order {
+    background-color: $white;
+    padding: 40px 0;
+    box-shadow: 0px 10px 22px rgba(39, 39, 39, 0.3);
+    &-tabs {
+      &_btn {
+        justify-content: center;
+        margin-bottom: 64px;
+        span {
+          @extend %styled-links;
+          background: linear-gradient(208deg, transparent 17px, $brand-gray 0);
+          color: $white;
+          line-height: 30px;
+          letter-spacing: 0.05em;
+          &.active {
+            background: linear-gradient(208deg, transparent 17px, $brand-blue 0);
+          }
+        }
+      }
+
+      &__inner {
+        display: none;
+        &.active{
+          display: block;
+        }
+        form {
+          input {
+            width: 100%;
+            padding: 25px 31px;
+            font-size: 24px;
+            border: none;
+            background-color: $body-color;
+            margin-bottom: 30px;
+            &:focus{
+              outline: none;
+            }
+            &::placeholder {
+              color: $brand-gray;
+              font-size: 24px;
+            }
+          }
+
+          .contact-us__item-select {
+            margin-bottom: 30px;
+            label{
+              input{
+                text-align: left;
+                color: $brand-gray;
+              }
+              span{
+                top: 35px;
+                right: 10px;
+              }
+            }
+            .active-value {
+              margin: 0;
+            }
+
+            ul {
+              margin: 0;
+            }
+
+            max-height: unset;
+          }
+
+          .date-picker {
+            input {
+              text-align: center;
+              color: $brand-gray;
+            }
+          }
+
+          button {
+            border: none;
+            min-width: 369px;
+            margin: 50px auto;
+            display: block;
+            @extend %styled-links;
+            color: $white;
+            background: linear-gradient(208deg, transparent 17px, $light-blue 0);
+            line-height: 30px;
+            letter-spacing: 0.05em;
+          }
+        }
+      }
+
+      .bag-prices {
+        &-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 35px;
+          color: $brand-blue;
+          line-height: 22px;
+          letter-spacing: 0.05em;
+          padding: 20px;
+
+          p {
+            font-size: 18px;
+          }
+
+          span {
+            font-family: 'icons';
+            font-size: 28px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  &-items{
+    .analyzes-products__inner-item{
+      position: relative;
+      .remove__btn{
+        width: 27px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
