@@ -1,0 +1,118 @@
+@import "../variables";
+
+.account-page{
+  padding-top: 100px;
+  &-tabs{
+    &.active{
+      display: block!important;
+    }
+  }
+}
+
+
+.orders{
+  margin-top: 53px;
+  display: none;
+  &__item{
+    cursor: pointer;
+    margin-bottom: 20px;
+    &.open{
+      .orders__item-header-icon{
+        transform: rotate(90deg);
+        transition: all .5s ease;
+      }
+      .orders__item-body{
+        max-height: 1000px;
+        transition: all .5s ease;
+      }
+    }
+    &-header{
+      padding: 28px 80px 28px 28px;
+      width: 100%;
+      border: 1px solid $brand-gray;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      background-color: $white;
+      p{
+        margin: 0;
+      }
+      &-title{
+        color: $brand-blue;
+        font-size: 20px;
+        font-weight: 700;
+        .number{
+          color: $brand-gray;
+          font-size: 15px;
+          font-weight: 700;
+          position: absolute;
+          top: 8px;
+          left: 28px;
+        }
+      }
+      &-date{
+        color: $light-blue;
+        font-size: 18px;
+        display: flex;
+        justify-content: flex-end;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+      }
+      &-icon{
+        font-family: 'icons';
+        position: absolute;
+        top: 28px;
+        right: 28px;
+        transition: all .5s ease;
+      }
+    }
+    &-body{
+      max-height: 0;
+      overflow: hidden;
+      transition: all .5s ease;
+      table{
+        width: 100%;
+        background-color: $white;
+        th, td{
+          border-right: 2px solid $brand-gray;
+          color: $brand-gray;
+          &:last-child{
+            border-right: none;
+          }
+        }
+        td{
+          padding: 36px 20px;
+          color: $brand-blue;
+          font-weight: 700;
+          font-size: 20px;
+          &:first-child{
+            text-align: right;
+          }
+        }
+        thead{
+          tr{
+            border-bottom: 2px solid $brand-gray;
+            th{
+              padding: 8px 20px;
+              width: 25%;
+              &:first-child{
+                width: 50%;
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.settings{
+  display: none;
+  h4{
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+}

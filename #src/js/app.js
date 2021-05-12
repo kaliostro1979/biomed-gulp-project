@@ -6,6 +6,7 @@
 @@include('tech-slider.js')
 @@include('news.js')
 @@include('login-register-page.js')
+@@include('account-page.js')
 
 
 $(document).ready(function() {

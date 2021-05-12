@@ -7935,6 +7935,138 @@ fieldset:disabled .btn {
   background: linear-gradient(208deg, transparent 17px, #52A4E3 0);
 }
 
+.account-page {
+  padding-top: 100px;
+}
+
+.account-page-tabs.active {
+  display: block !important;
+}
+
+.orders {
+  margin-top: 53px;
+  display: none;
+}
+
+.orders__item {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.orders__item.open .orders__item-header-icon {
+  transform: rotate(90deg);
+  transition: all .5s ease;
+}
+
+.orders__item.open .orders__item-body {
+  max-height: 1000px;
+  transition: all .5s ease;
+}
+
+.orders__item-header {
+  padding: 28px 80px 28px 28px;
+  width: 100%;
+  border: 1px solid #b0b8c0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.orders__item-header p {
+  margin: 0;
+}
+
+.orders__item-header-title {
+  color: #183042;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.orders__item-header-title .number {
+  color: #b0b8c0;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  top: 8px;
+  left: 28px;
+}
+
+.orders__item-header-date {
+  color: #52A4E3;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.orders__item-header-icon {
+  font-family: 'icons';
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  transition: all .5s ease;
+}
+
+.orders__item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s ease;
+}
+
+.orders__item-body table {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.orders__item-body table th,
+.orders__item-body table td {
+  border-right: 2px solid #b0b8c0;
+  color: #b0b8c0;
+}
+
+.orders__item-body table th:last-child,
+.orders__item-body table td:last-child {
+  border-right: none;
+}
+
+.orders__item-body table td {
+  padding: 36px 20px;
+  color: #183042;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.orders__item-body table td:first-child {
+  text-align: right;
+}
+
+.orders__item-body table thead tr {
+  border-bottom: 2px solid #b0b8c0;
+}
+
+.orders__item-body table thead tr th {
+  padding: 8px 20px;
+  width: 25%;
+}
+
+.orders__item-body table thead tr th:first-child {
+  width: 50%;
+  text-align: right;
+}
+
+.settings {
+  display: none;
+}
+
+.settings h4 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
 @media (min-width: 576px) {
   .container,
   .container-sm {
