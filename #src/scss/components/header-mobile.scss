@@ -1,0 +1,128 @@
+@import "../variables";
+
+.mobile{
+  position: relative;
+  overflow: hidden;
+  display: none;
+  &-header__wrapper{
+    position: relative;
+    padding: 10px 20px;
+    background-color: $white;
+  }
+  .logo{
+    width: 200px;
+  }
+  .menu-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  &-menu{
+    position: fixed;
+    width: 100vw;
+    top: 79px;
+    right: -100vw;
+    background-color: $white;
+    min-height: calc(100vh - 79px);
+    transition: right .3s ease;
+    z-index: 100;
+    &.open{
+      right: 0;
+    }
+    .mobile-search{
+      display: flex;
+      justify-content: flex-start;
+      padding: 20px;
+      .user-control{
+        &__items{
+          margin-right: 40px;
+          margin-left: 0;
+        }
+      }
+    }
+    &__links{
+      nav{
+        ul{
+          padding: 20px;
+          .has-child{
+            span{
+              font-family: 'icons';
+              font-size: 12px;
+              position: absolute;
+              right: 13px;
+              top: 13px;
+            }
+          }
+          li{
+            background-color: $body-color;
+            padding: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            a{
+              color: $brand-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*----Menu Icon---*/
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+  position: relative;
+  justify-content: space-around;
+  transform: rotate(90deg);
+}
+
+.icon span {
+  width: 3px;
+  height: 100%;
+  border: 1px solid #000000;
+  display: block;
+  background-color: #000000;
+  transition: all .3s linear;
+  border-radius: 15px;
+}
+
+.icon.close{
+  transition: all .3s linear;
+}
+
+.icon span:nth-child(1){
+  transform-origin: left bottom;
+}
+
+.icon span:nth-child(2){
+  position: relative;
+  left: 0;
+  opacity: 1;
+}
+
+.icon span:nth-child(3){
+  transform-origin: right bottom;
+}
+
+.icon.close span:nth-child(1) {
+  transform: rotate(45deg);
+  transition: all .3s linear;
+}
+
+.icon.close span:nth-child(2) {
+  transform: rotate(-90deg) translateX(-13px);
+  transition: all .3s linear;
+  opacity: 0;
+}
+
+.icon.close span:nth-child(3) {
+  transform: rotate(-45deg);
+  transition: all .3s linear;
+}

@@ -233,6 +233,13 @@ $('.results form').on('submit', function (e) {
     $('.loaded').show()
 })
 
+$('.icon').on('click', function () {
+    $(this).toggleClass('close')
+    $('.mobile-menu').toggleClass('open')
+    $('body').toggleClass('mobile-open')
+})
+
+
 
 $(document).ready(function() {
     $('.lang-switcher').select2({

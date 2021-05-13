@@ -10,6 +10,7 @@
 @@include('s-analyse.js')
 @@include('bag.js')
 @@include('results.js')
+@@include('mobile-menu.js')
 
 
 $(document).ready(function() {

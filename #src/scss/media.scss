@@ -7,11 +7,46 @@
 }
 
 @media (max-width: 991px){
+  .desktop-header{
+    display: none;
+  }
 
+  .mobile{
+    display: block;
+  }
 }
 
 @media (max-width: 768px){
-
+  .mobile{
+    &-menu{
+      .mobile-search{
+        flex-wrap: wrap;
+        .user-control{
+          margin-bottom: 20px;
+          align-items: center;
+          &__bag{
+            width: 30px;
+            &-count{
+              width: 17px;
+              height: 20px;
+              line-height: 20px;
+              font-size: 12px;
+              top: -4px;
+            }
+          }
+          &__account{
+            width: 22px;
+          }
+        }
+        form{
+          width: 100%;
+          input{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 476px){
