@@ -9,6 +9,7 @@
 @@include('account-page.js')
 @@include('s-analyse.js')
 @@include('bag.js')
+@@include('results.js')
 
 
 $(document).ready(function() {

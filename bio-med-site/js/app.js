@@ -227,6 +227,11 @@ $('.bag-order-tabs_btn span').on('click', function () {
         }
     })
 })
+$('.results form').on('submit', function (e) {
+    e.preventDefault()
+    $('.results-info').hide()
+    $('.loaded').show()
+})
 
 
 $(document).ready(function() {

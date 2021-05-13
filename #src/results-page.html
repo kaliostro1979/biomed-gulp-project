@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Call home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+@@include('./html-components/_header.html')
+
+<section class="results">
+    <div class="container results-info">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="results-title">
+                    <h4>Թեստի արդյունքները</h4>
+                    <small>դիտելու համար պարզապես մուտքագրեք պատվերի համարը</small>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <form>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <input type="text" placeholder="Անուն Ազգանուն*"/>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" placeholder="Ծննդյան ամսաթիվ*"/>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" placeholder="Կոդը*"/>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-12">
+                            <button type="submit">ԱՉԴՅՈՒՆՔՆԵՐԸ</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container loaded">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="loaded-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="title">
+                                <span class="_icon-male"></span>
+                                <h4>Հակոբ Ավագյան 18․05․1986</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="date">
+                                <p>Ամսաթիվ։ <span>05․06.2021</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="loaded-table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Թեստի անուն</th>
+                            <th>Արդյունք</th>
+                            <th>Նորմա ըստ սեռի և տարիքի</th>
+                            <th>Միավոր</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="table-data">
+                                    <p class="number">№ <span>1636</span></p>
+                                    <p class="table-data__title">Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ (12 մուտացիա)</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <p>19,2</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <p><37․0</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <p>ռի</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-data">
+                                    <p class="number">№ <span>1636</span></p>
+                                    <p class="table-data__title">Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ (12 մուտացիա)</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <p>19,2</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <p><37․0</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <p>ռի</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-data">
+                                    <p class="number">№ <span>1636</span></p>
+                                    <p class="table-data__title">Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ (12 մուտացիա)</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <p>19,2</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <p><37․0</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-data">
+                                    <p>ռի</p>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    @@include('./html-components/_contact-us.html')
+</section>
+
+@@include('./html-components/_footer.html')
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

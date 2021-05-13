@@ -6455,7 +6455,8 @@ fieldset:disabled .btn {
 .single-analyse .s-body-btn__button,
 .bag.empty .empty-bag__text .button,
 .bag-order-tabs_btn span,
-.bag-order-tabs__inner form button {
+.bag-order-tabs__inner form button,
+.results form button {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -6743,7 +6744,8 @@ fieldset:disabled .btn {
 .single-analyse .s-body-btn__button,
 .bag.empty .empty-bag__text .button,
 .bag-order-tabs_btn span,
-.bag-order-tabs__inner form button {
+.bag-order-tabs__inner form button,
+.results form button {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -6853,7 +6855,8 @@ fieldset:disabled .btn {
 .single-analyse .s-body-btn__button,
 .bag.empty .empty-bag__text .button,
 .bag-order-tabs_btn span,
-.bag-order-tabs__inner form button {
+.bag-order-tabs__inner form button,
+.results form button {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -7130,7 +7133,8 @@ fieldset:disabled .btn {
 .single-analyse .s-body-btn__button,
 .bag.empty .empty-bag__text .button,
 .bag-order-tabs_btn span,
-.bag-order-tabs__inner form button {
+.bag-order-tabs__inner form button,
+.results form button {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -7348,7 +7352,8 @@ fieldset:disabled .btn {
 .single-analyse .s-body-btn__button,
 .bag.empty .empty-bag__text .button,
 .bag-order-tabs_btn span,
-.bag-order-tabs__inner form button {
+.bag-order-tabs__inner form button,
+.results form button {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -7844,7 +7849,8 @@ fieldset:disabled .btn {
 .single-analyse .s-body-btn__button,
 .bag.empty .empty-bag__text .button,
 .bag-order-tabs_btn span,
-.bag-order-tabs__inner form button {
+.bag-order-tabs__inner form button,
+.results form button {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -8120,7 +8126,8 @@ fieldset:disabled .btn {
 .single-analyse .s-body-btn__button,
 .bag.empty .empty-bag__text .button,
 .bag-order-tabs_btn span,
-.bag-order-tabs__inner form button {
+.bag-order-tabs__inner form button,
+.results form button {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -8268,7 +8275,8 @@ fieldset:disabled .btn {
 .single-analyse .s-body-btn__button,
 .bag.empty .empty-bag__text .button,
 .bag-order-tabs_btn span,
-.bag-order-tabs__inner form button {
+.bag-order-tabs__inner form button,
+.results form button {
   padding: 14px 27px 16px;
   text-align: center;
   font-size: 25px;
@@ -8472,6 +8480,175 @@ fieldset:disabled .btn {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.call-home {
+  padding-top: 100px;
+}
+
+.call-home__row {
+  padding-bottom: 100px;
+}
+
+.call-home .text-wrapper {
+  margin-bottom: 50px;
+}
+
+.call-home .text-wrapper p {
+  color: #b0b8c0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.call-home .text-wrapper p span {
+  color: #52A4E3;
+}
+
+.call-home .icon-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.call-home .icon-wrapper .icon {
+  width: 291px;
+}
+
+.top-header__result-link,
+.slider-text-link a,
+.analyzes-header-tab__btn span,
+.contact-us__form form button,
+.analyses-item .options-wrapper .add-to__cart button,
+.user-switcher__inner .register-form form button,
+.user-switcher__inner .has-no-account-wrapper .no-account__link a,
+.single-analyse .s-body-btn__button,
+.bag.empty .empty-bag__text .button,
+.bag-order-tabs_btn span,
+.bag-order-tabs__inner form button,
+.results form button {
+  padding: 14px 27px 16px;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  background: linear-gradient(208deg, transparent 17px, #183042 0);
+  display: inline-block;
+}
+
+.results {
+  padding-top: 100px;
+}
+
+.results .container.results-info {
+  display: block;
+}
+
+.results .container.loaded {
+  display: none;
+}
+
+.results-title small {
+  font-size: 18px;
+  color: #b0b8c0;
+}
+
+.results form input {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 25px 31px;
+  border: none;
+  font-size: 24px;
+}
+
+.results form input::-moz-placeholder {
+  color: #b0b8c0;
+  font-size: 24px;
+}
+
+.results form input:-ms-input-placeholder {
+  color: #b0b8c0;
+  font-size: 24px;
+}
+
+.results form input::placeholder {
+  color: #b0b8c0;
+  font-size: 24px;
+}
+
+.results form input:focus {
+  outline: none;
+}
+
+.results form button {
+  border: none;
+  color: #ffffff;
+}
+
+.results .loaded-header {
+  margin-bottom: 40px;
+}
+
+.results .loaded-header .title {
+  display: flex;
+  align-items: center;
+}
+
+.results .loaded-header .title h4 {
+  margin-bottom: 0;
+}
+
+.results .loaded-header .title span {
+  font-family: 'icons';
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.results .loaded-header .date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 18px;
+  color: #52A4E3;
+}
+
+.results .loaded-table table {
+  width: 100%;
+  border: 2px solid #b0b8c0;
+}
+
+.results .loaded-table table tr {
+  border-bottom: 2px solid #b0b8c0;
+}
+
+.results .loaded-table table th,
+.results .loaded-table table td {
+  border-right: 2px solid #b0b8c0;
+  padding: 20px;
+  color: #183042;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.results .loaded-table table th .number,
+.results .loaded-table table td .number {
+  font-size: 15px;
+  color: #b0b8c0;
+}
+
+.results .loaded-table table th p,
+.results .loaded-table table td p {
+  margin: 0;
+}
+
+.results .loaded-table table thead tr th {
+  color: #b0b8c0;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.quality-control {
+  padding-top: 44px;
 }
 
 @media (min-width: 576px) {
