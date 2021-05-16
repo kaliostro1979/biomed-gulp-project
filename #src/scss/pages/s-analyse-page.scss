@@ -100,18 +100,19 @@
         margin-right: 33px;
       }
       &__button{
-        display: flex;
+        display: flex!important;
         align-items: center;
         line-height: 30px;
         letter-spacing: 0.05em;
         cursor: pointer;
         @extend %styled-links;
         border: none;
-        background: linear-gradient(208deg, transparent 17px, $light-blue 0) !important;
+        background: linear-gradient(208deg, transparent 11px, $light-blue 0)!important;
+        padding: 11px 18px 9px!important;
         color: $white;
         img{
-          width: 40px;
-          margin-left: 22px;
+          width: 32px;
+          margin-left: 15px;
         }
         &:focus{
           outline: none;
