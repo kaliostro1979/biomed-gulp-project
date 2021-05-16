@@ -2,16 +2,16 @@
 
 .research{
   &-section__title{
-    margin-bottom: 60px;
+    margin-bottom: 49px;
   }
   &-item{
     padding: 20px;
     background: linear-gradient(222deg, transparent 10px, $white 0);
     &:hover{
-      box-shadow: 0px 10px 22px rgba(39, 39, 39, 0.3);
+      box-shadow: 0 10px 22px rgba(39, 39, 39, 0.3);
     }
     &__img{
-      max-width: 120px;
+      max-width: 145px;
       margin: 0 auto 30px;
       padding-top: 160px;
       position: relative;
@@ -24,7 +24,7 @@
       }
     }
     &__title{
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 700;
       line-height: 30px;
       letter-spacing: 0.05em;
@@ -40,7 +40,7 @@
       text-align: right;
       a{
         color: $light-blue;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 700;
         &:hover{
           color: $light-blue;

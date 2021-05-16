@@ -17,12 +17,12 @@
     right: 0;
   }
   &__info{
-    padding: 204px 89px;
+    padding: 220px 0 220px 36px;
     position: relative;
     z-index: 2;
     &__title{
       h2{
-        font-size: 75px;
+        font-size: 45px;
         font-weight: 700;
       }
     }
@@ -35,11 +35,12 @@
     &__link{
       text-align: right;
       a{
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 700;
         line-height: 24px;
         letter-spacing: 0.05em;
-        color: #52A4E3;;
+        color: #52A4E3;
+        text-transform: uppercase;
         &:hover{
           color: $light-blue;
         }

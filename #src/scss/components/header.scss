@@ -2,7 +2,7 @@
 @import "../templates";
 
 .top-header{
-  padding: 36px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: flex-end;
   &__result-link{
@@ -17,24 +17,28 @@
 
 .main-header{
   background-color: $white;
-  padding: 30px 0;
+  padding: 20px 0;
   &__wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   &__wrapper__logo{
-    width: 250px;
+    width: 216px;
   }
   &__wrapper__search{
     display: flex;
+    align-items: center;
     &-wrapper{
       position: relative;
       input{
         background: $body-color;
         border: none;
-        padding: 9px 22px;
+        padding: 3px 22px;
         border-radius: 5px;
+        &::placeholder{
+          font-size: 12px;
+        }
         &:focus{
           outline: none;
         }
@@ -44,29 +48,30 @@
         border: none;
         outline: none;
         position: absolute;
-        top: 5px;
+        top: 1px;
         right: 10px;
       }
     }
     .user-control{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       &__items{
         margin-left: 40px;
       }
       &__bag{
-        width: 47px;
+        width: 35px;
         position: relative;
         &-count{
           position: absolute;
           display: block;
-          width: 23px;
-          height: 27px;
-          line-height: 27px;
+          width: 18px;
+          height: 22px;
+          line-height: 22px;
           background-color: $icons-blue;
           text-align: center;
           color: $white;
-          font-size: 15px;
+          font-size: 9px;
           font-weight: 700;
           top: 0;
           right: -7px;
@@ -77,7 +82,7 @@
         }
       }
       &__account{
-        width: 34px;
+        width: 25px;
       }
       &__language-switcher{
         .select2-selection--single{
@@ -85,12 +90,12 @@
           font-weight: 700!important;
           border: none;
           background-color: $body-color;
-          height: 40px;
+          height: 30px;
 
           text-align: center;
           .select2-selection__rendered{
             padding: 0;
-            line-height: 40px;
+            line-height: 30px;
           }
           .select2-selection__arrow{
             display: none;

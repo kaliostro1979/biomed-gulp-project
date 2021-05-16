@@ -3,7 +3,7 @@
 
 
 .contact-us{
-  margin: 150px 0 0;
+  margin: 120px 0 0;
   position: relative;
   &__decor{
     position: absolute;
@@ -49,8 +49,7 @@
         @extend %styled-links;
         border: none;
         color: $white;
-        padding: 15px 60px!important;
-        min-width: 280px;
+        min-width: 130px;
         float: right;
         line-height: 30px;
         letter-spacing: 0.05em;
@@ -65,13 +64,13 @@
   }
   &__item{
     position: relative;
-    padding-top: 160px;
+    padding-top: 135px;
     text-align: center;
     margin: 145px auto 0;
     width: 360px;
     font-size: 15px;
     &-img{
-      max-width: 145px;
+      max-width: 119px;
       position: absolute;
       top: 0;
       left: 50%;
