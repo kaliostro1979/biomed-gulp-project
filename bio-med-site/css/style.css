@@ -7698,7 +7698,7 @@ fieldset:disabled .btn {
   margin-right: 40px;
   font-weight: 700;
   color: #52A4E3;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .about-us__section .about-us__header-img .wrapper {
@@ -7758,7 +7758,7 @@ fieldset:disabled .btn {
 .about-us-slider-desc p {
   color: #000000;
   font-size: 18px;
-  margin: 20px 0 40px;
+  margin: 20px 0;
 }
 
 .about-us-slider-items__container {
@@ -7773,30 +7773,27 @@ fieldset:disabled .btn {
   display: flex;
   min-width: 83vw;
   overflow-x: scroll;
-  padding: 25px;
+  padding: 25px 0;
 }
 
 .about-us-slider-items__container__inner .about-us-slider-item {
-  width: 440px;
-  min-width: 440px;
+  width: 330px;
+  min-width: 330px;
   margin-right: 40px;
 }
 
 .about-us-slider-items__container__inner .about-us-slider-item__img {
+  height: 253px;
   background-color: #ffffff;
-  position: relative;
-  padding-top: 260px;
-  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about-us-slider-items__container__inner .about-us-slider-item__img picture {
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 
 .about-us-slider-items__container__inner .about-us-slider-item__info {

@@ -16,7 +16,7 @@
         margin-right: 40px;
         font-weight: 700;
         color: $light-blue;
-        text-transform: lowercase;
+        text-transform: uppercase;
       }
     }
 
@@ -86,7 +86,7 @@
     p {
       color: $black;
       font-size: 18px;
-      margin: 20px 0 40px;
+      margin: 20px 0;
     }
   }
 
@@ -100,25 +100,24 @@
       display: flex;
       min-width: 83vw;
       overflow-x: scroll;
-      padding: 25px;
+      padding: 25px 0;
 
       .about-us-slider-item {
-        width: 440px;
-        min-width: 440px;
+        width: 330px;
+        min-width: 330px;
         margin-right: 40px;
 
         &__img {
+          height: 253px;
           background-color: $white;
-          position: relative;
-          padding-top: 260px;
-          overflow: hidden;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
 
           picture {
             position: absolute;
             top: 0;
             left: 0;
-            object-fit: cover;
-            object-position: center;
           }
         }
 
