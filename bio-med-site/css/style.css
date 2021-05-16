@@ -7790,12 +7790,6 @@ fieldset:disabled .btn {
   background-repeat: no-repeat;
 }
 
-.about-us-slider-items__container__inner .about-us-slider-item__img picture {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .about-us-slider-items__container__inner .about-us-slider-item__info {
   padding: 20px 20px 33px;
   border-radius: 6px;
