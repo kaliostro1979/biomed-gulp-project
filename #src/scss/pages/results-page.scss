@@ -25,13 +25,13 @@
     input {
       width: 100%;
       background-color: $white;
-      padding: 25px 31px;
+      padding: 19px 20px;
       border: none;
-      font-size: 24px;
+      font-size: 18px;
 
       &::placeholder {
         color: $brand-gray;
-        font-size: 24px;
+        font-size: 18px;
       }
 
       &:focus {

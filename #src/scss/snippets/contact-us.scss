@@ -28,11 +28,11 @@
         border: none;
         background-color: $white;
         width: 100%;
-        margin-bottom: 30px;
-        padding: 25px 31px;
-        font-size: 24px;
+        margin-bottom: 20px;
+        padding: 17px 31px;
+        font-size: 18px;
         &::placeholder{
-          font-size: 24px;
+          font-size: 18px;
           color: rgba(30, 34, 36, 0.5);
         }
         &:focus{
@@ -53,6 +53,7 @@
         float: right;
         line-height: 30px;
         letter-spacing: 0.05em;
+        margin-top: 40px;
       }
     }
   }
