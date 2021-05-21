@@ -60,6 +60,7 @@
   &__map{
     box-shadow: 0px 10px 22px rgba(39, 39, 39, 0.3);
     height: 100%;
+    min-height: 320px;
     position: relative;
     z-index: 2;
   }
@@ -83,10 +84,8 @@
     }
     &-select{
       max-height: 40px;
-      label{
-        width: 100%;
-        position: relative;
-        input{
+      position: relative;
+        .active-value{
           background-color: $white;
           padding: 12px 0 8px;
           border: none;
@@ -94,9 +93,6 @@
           text-align: center;
           white-space: normal;
           cursor: pointer;
-          &:focus{
-            outline: none;
-          }
         }
         span{
           font-family: 'icons';
@@ -111,7 +107,6 @@
             transition: all linear .3s;
           }
         }
-      }
       ul{
         max-height: 0;
         overflow: hidden;

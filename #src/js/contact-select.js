@@ -29,12 +29,12 @@ const dropDownChevrone = $('._icon-chevrone-down')
 
 
 const createSelectList = () => {
-    $(activeValue).val(contactInfo[0].name)
+    $(activeValue).text(contactInfo[0].name)
     $(contactInfoTelNumber).text(contactInfo[0].tel)
     $(contactInfoEmail).text(contactInfo[0].email)
     contactInfo.map((info) => {
         contactInfoUl.append(`
-            <li><span>${info.name}</span></li>
+            <li><article class="contact-info__item">${info.name}</article></li>
         `)
     })
 }
@@ -45,16 +45,18 @@ const selectListItem = $(contactInfoUl).find('li')
 
 $(document).on('click', function (e) {
     e.stopPropagation()
-    if ($('.contact-us__item-select-label').has(e.target).length === 0){
+    if ($('.contact-us__item-select').has(e.target).length === 0){
         $(contactInfoUl).removeClass('open-list')
         $(dropDownChevrone).removeClass('icon-open')
     }
 })
 
-$(selectListItem).on('click', function () {
+$(selectListItem).on('click', function (e) {
+    e.stopPropagation()
     const selectedLi = this.innerText
-    $(activeValue).val(selectedLi)
+    $(activeValue).text(selectedLi)
     $(contactInfoUl).removeClass('open-list')
+    $(dropDownChevrone).removeClass('icon-open')
     contactInfo.map((info) => {
         if (info.name === selectedLi) {
             $(contactInfoTelNumber).text(info.tel)
@@ -64,7 +66,8 @@ $(selectListItem).on('click', function () {
 })
 
 
-$('.contact-us__item-select-label').on('click', function (e) {
+
+$('.contact-us__item-select').on('click', function (e) {
     $(contactInfoUl).toggleClass('open-list')
     $(dropDownChevrone).toggleClass('icon-open')
 })

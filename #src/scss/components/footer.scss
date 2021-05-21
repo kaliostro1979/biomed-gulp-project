@@ -31,14 +31,6 @@
       }
     }
   }
-  &-title{
-    font-size: 16px;
-    margin-bottom: 35px;
-    h5{
-      font-weight: 700;
-      color: $black;
-    }
-  }
   &-list{
     font-size: 16px;
     ul{
@@ -46,7 +38,23 @@
         margin-bottom: 20px;
         a{
           color: $black;
+          font-size: 16px;
+          font-weight: 700;
         }
+      }
+    }
+  }
+  &-news{
+    &__title{
+      h5{
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+    &__item{
+      a{
+        color: $black;
+        font-size: 16px;
       }
     }
   }

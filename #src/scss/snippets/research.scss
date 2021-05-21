@@ -6,7 +6,9 @@
   }
   &-item{
     padding: 20px;
-    background: linear-gradient(222deg, transparent 10px, $white 0);
+    background-color: $white;
+    border-radius: 6px;
+    margin-bottom: 30px;
     &:hover{
       box-shadow: 0 10px 22px rgba(39, 39, 39, 0.3);
     }

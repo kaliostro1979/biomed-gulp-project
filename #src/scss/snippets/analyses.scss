@@ -32,6 +32,16 @@
       display: flex;
       min-width: 83vw;
       overflow-x: scroll;
+      &::-webkit-scrollbar {
+        height: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $brand-blue;
+        border-radius: 5px;
+      }
       &-item{
         width: 560px;
         min-width: 560px;
@@ -125,17 +135,6 @@
         text-transform: uppercase;
       }
     }
-  }
-  -webkit-overflow-scrolling: touch;
-  ::-webkit-scrollbar {
-    height: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: $brand-blue;
-    border-radius: 5px;
   }
 }
 
