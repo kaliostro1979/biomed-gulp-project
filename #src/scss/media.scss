@@ -236,6 +236,13 @@
       }
     }
   }
+  .single-news{
+    &_wrapper{
+      &__img{
+        min-height: 400px;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -611,6 +618,40 @@
 
       .desc {
         font-size: 12px;
+      }
+    }
+  }
+  .single-news{
+    &_wrapper{
+      &__img{
+        min-height: 190px;
+      }
+      &__date{
+        font-size: 12px;
+      }
+      &__title{
+        font-size: 18px;
+        font-weight: 900;
+      }
+      &__text{
+        font-size: 14px;
+      }
+    }
+    .news__social{
+      &-wrapper{
+        &-label{
+          font-size: 16px;
+        }
+        &-list{
+          ul{
+            li{
+              margin-left: 20px;
+              a{
+                font-size: 22px;
+              }
+            }
+          }
+        }
       }
     }
   }
