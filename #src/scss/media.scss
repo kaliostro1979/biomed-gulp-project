@@ -259,6 +259,23 @@
       margin-top: 40px;
     }
   }
+  .about-us__section{
+    .about-us__header{
+      .slider-text-line{
+        p{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .about-us-slider{
+    &-desc{
+      p{
+        font-size: 14px;
+        line-height: 21px;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -709,6 +726,32 @@
       }
       &-tabs{
         font-size: 14px;
+      }
+    }
+  }
+  .about-us__section{
+    margin-bottom: 80px;
+  }
+  .about-us-slider{
+    &-header{
+      &-slider__control{
+        span{
+          font-size: 16px;
+          &:nth-child(2){
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+    &-items__container{
+      margin-bottom: 60px;
+    }
+  }
+  .about-us__certificate{
+    .certificate__text{
+      p{
+        font-size: 14px;
+        line-height: 21px;
       }
     }
   }

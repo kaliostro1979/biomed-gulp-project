@@ -6981,7 +6981,7 @@ fieldset:disabled .btn {
   color: #b0b8c0;
   letter-spacing: 2px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 27px;
   font-weight: 400;
   width: 80%;
 }
@@ -7747,6 +7747,11 @@ fieldset:disabled .btn {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  height: 100%;
+}
+
+.about-us__section .about-us__header .slider-text-line {
+  margin: 20px 0;
 }
 
 .about-us__section .about-us__header .slider-text-line p {
@@ -7805,6 +7810,10 @@ fieldset:disabled .btn {
   align-items: center;
 }
 
+.about-us-slider-header-slider__control {
+  display: flex;
+}
+
 .about-us-slider-header-slider__control span {
   font-family: 'icons';
   cursor: pointer;
@@ -7818,6 +7827,7 @@ fieldset:disabled .btn {
 .about-us-slider-desc p {
   color: #000000;
   font-size: 18px;
+  line-height: 27px;
   margin: 20px 0;
 }
 
@@ -7853,6 +7863,7 @@ fieldset:disabled .btn {
 .about-us-slider-items__container__inner .about-us-slider-item__info {
   padding: 20px 20px 33px;
   border-radius: 6px;
+  background-color: #F5FAFF;
 }
 
 .about-us-slider-items__container__inner .about-us-slider-item__info span {
@@ -7887,14 +7898,14 @@ fieldset:disabled .btn {
   margin-top: 10px;
   font-size: 1.2rem;
   text-shadow: 0 0 0 #9c9c9c;
-  min-height: 83px;
+  min-height: 75px;
   max-height: -webkit-min-content;
   max-height: -moz-min-content;
   max-height: min-content;
 }
 
 .about-us-slider-items__container__inner .about-us-slider-item__info .tech-slider__info__wrapper .tech-desc {
-  font-size: 18px;
+  font-size: 16px;
   width: 100%;
 }
 
@@ -7904,7 +7915,8 @@ fieldset:disabled .btn {
 }
 
 .about-us-slider-items__container__inner .about-us-slider-item__info__title {
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -7912,6 +7924,8 @@ fieldset:disabled .btn {
 .about-us-slider-items__container__inner .about-us-slider-item__info__desc {
   width: 80%;
   color: #b0b8c0;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .show-more {
@@ -7938,7 +7952,6 @@ fieldset:disabled .btn {
 }
 
 .about-us__certificate .certificate__img {
-  width: 430px;
   margin: 0 0 0 auto;
 }
 
@@ -14122,6 +14135,15 @@ fieldset:disabled .btn {
   .s-analyze-slider .contact-us__info-block {
     margin-top: 40px;
   }
+
+  .about-us__section .about-us__header .slider-text-line p {
+    width: 100%;
+  }
+
+  .about-us-slider-desc p {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -14627,6 +14649,27 @@ fieldset:disabled .btn {
 
   .single-analyse .s-body-tabs {
     font-size: 14px;
+  }
+
+  .about-us__section {
+    margin-bottom: 80px;
+  }
+
+  .about-us-slider-header-slider__control span {
+    font-size: 16px;
+  }
+
+  .about-us-slider-header-slider__control span:nth-child(2) {
+    margin-left: 30px;
+  }
+
+  .about-us-slider-items__container {
+    margin-bottom: 60px;
+  }
+
+  .about-us__certificate .certificate__text p {
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 

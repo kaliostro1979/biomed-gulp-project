@@ -19,6 +19,7 @@ $.fn.hScroll = function (amount) {
         position += direction > 0 ? -amount : amount;
         $(this).scrollLeft(position);
         event.preventDefault();
+        event.stopPropagation()
     })
 };
 
