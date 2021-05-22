@@ -68,6 +68,7 @@ $(selectListItem).on('click', function (e) {
 
 
 $('.contact-us__item-select').on('click', function (e) {
+    e.preventDefault()
     $(contactInfoUl).toggleClass('open-list')
     $(dropDownChevrone).toggleClass('icon-open')
 })

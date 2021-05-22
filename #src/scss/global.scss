@@ -7,7 +7,6 @@
 }
 body{
   font-family: 'Montserrat arm', sans-serif!important;
-  font-size: 24px;
   background-color: $body-color!important;
   &.mobile-open{
     overflow: hidden;
@@ -19,6 +18,10 @@ img{
   height: auto;
 }
 
+svg{
+  width: 100%;
+}
+
 body ul{
   list-style: none;
   padding: 0;
@@ -26,6 +29,7 @@ body ul{
 
 body a{
   text-decoration: none;
+  font-weight: 700;
   &:hover{
     text-decoration: none;
   }
@@ -34,6 +38,13 @@ body a{
 body h4{
   font-size: 30px;
   font-weight: 700;
+}
+
+body input, body textarea{
+  font-size: 18px;
+  &::placeholder{
+    font-size: 18px;
+  }
 }
 
 

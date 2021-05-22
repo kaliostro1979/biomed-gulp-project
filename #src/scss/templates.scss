@@ -1,14 +1,14 @@
 @import "variables";
 
 %styled-links{
-  padding: 11px 27px 11px;
+  padding: 16px;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
   position: relative;
   background: linear-gradient(208deg, transparent 11px, $brand-blue 0);
   display: inline-block;
   text-transform: uppercase;
-  line-height: 18px;
+  line-height: 22px;
   letter-spacing: 0.05em;
 }
 

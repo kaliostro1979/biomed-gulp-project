@@ -27,11 +27,8 @@
       background-color: $white;
       padding: 19px 20px;
       border: none;
-      font-size: 18px;
-
       &::placeholder {
         color: $brand-gray;
-        font-size: 18px;
       }
 
       &:focus {

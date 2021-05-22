@@ -92,6 +92,7 @@ $(selectListItem).on('click', function (e) {
 
 
 $('.contact-us__item-select').on('click', function (e) {
+    e.preventDefault()
     $(contactInfoUl).toggleClass('open-list')
     $(dropDownChevrone).toggleClass('icon-open')
 })
@@ -103,6 +104,8 @@ $('.analyzes-header-tab__btn span').on('click', function () {
 $('.analyses-tags ul li').on('click', function () {
     $(this).toggleClass('selected')
 })
+
+
 const doctorsSliderChevronLeft = $('.doctors-slider ._icon-chevrone_left')
 const doctorsSliderChevronRight = $('.doctors-slider ._icon-chevrone_right')
 
@@ -115,7 +118,19 @@ doctorsSliderChevronLeft.on('click', function () {
     $('.doctors-slider__container__inner').animate( { scrollLeft: '-=250' }, 500);
 })
 
+$.fn.hScroll = function (amount) {
+    amount = amount || 120;
+    $(this).bind("DOMMouseScroll mousewheel", function (event) {
+        var oEvent = event.originalEvent,
+            direction = oEvent.detail ? oEvent.detail * -amount : oEvent.wheelDelta,
+            position = $(this).scrollLeft();
+        position += direction > 0 ? -amount : amount;
+        $(this).scrollLeft(position);
+        event.preventDefault();
+    })
+};
 
+$('.analyzes-products').hScroll(100);
 
 const techSliderChevronLeft = $('.tech-slider ._icon-chevrone_left')
 const techSliderChevronRight = $('.tech-slider ._icon-chevrone_right')
@@ -242,6 +257,54 @@ $('.icon').on('click', function () {
     $('body').toggleClass('mobile-open')
 })
 
+const mapContainer = document.getElementById('map')
+
+
+function initMap() {
+    let options = {
+        center: {lat: 40.2932074974116, lng: 44.35055671336521},
+        zoom: 16,
+        mapId: "cbfa135bc1f2d7ff"
+    }
+
+    let map = new google.maps.Map(mapContainer, options)
+
+    const svgMarker = {
+        path: "M5.70885 0.845978L11.3062 4.01742V10.3618L5.70885 13.5332L0.111542 10.3618V4.01742L5.70885 0.845978Z",
+        fillColor: "#932322",
+        fillOpacity: 1,
+        strokeWeight: 0,
+        scale: 3,
+    };
+
+    const markersArray = [
+        {location: {lat: 40.2932074974116, lng: 44.35055671336521}, icon: svgMarker, content: `<h2>Bio Med 1</h2>`},
+        {location: {lat: 40.293804880483705, lng: 44.34864698070171}, icon: svgMarker, content: `<h2>Bio Med 2</h2>`}
+    ]
+
+    /*Add marker function*/
+
+    function addMarker(property) {
+        const marker = new google.maps.Marker({
+            position: property.location,
+            map: map,
+            icon: property.icon
+        })
+
+        const infoWindow = new google.maps.InfoWindow({
+            content: property.content
+        })
+
+        marker.addListener('click', () => {
+            infoWindow.open(map, marker)
+        })
+    }
+
+    for (let i = 0; i < markersArray.length; i++){
+        addMarker(markersArray[i])
+    }
+}
+
 
 
 $(document).ready(function() {
@@ -261,3 +324,4 @@ const swiper = new Swiper('.main-slider-container', {
         clickable: true,
     }
 });
+

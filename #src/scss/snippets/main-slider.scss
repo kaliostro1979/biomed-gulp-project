@@ -12,7 +12,7 @@
       .swiper-pagination-bullet{
         width: 10px;
         height: 10px;
-        background: rgba(24, 48, 66, 0.1);
+        background: $brand-gray;
         margin-right: 40px;
         &.swiper-pagination-bullet-active{
           background: $brand-red!important;
@@ -34,10 +34,11 @@
     }
     h5{
       font-size: 18px;
+      font-weight: 700;
       color: $light-blue;
     }
     p{
-      color: rgba(30, 34, 36, 0.5);
+      color: $brand-gray;
       letter-spacing: 2px;
       font-size: 18px;
       line-height: 22px;

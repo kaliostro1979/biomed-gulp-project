@@ -6,3 +6,4 @@ $('.analyzes-header-tab__btn span').on('click', function () {
 $('.analyses-tags ul li').on('click', function () {
     $(this).toggleClass('selected')
 })
+

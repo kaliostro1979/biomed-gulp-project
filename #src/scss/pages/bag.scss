@@ -91,7 +91,6 @@
           input {
             width: 100%;
             padding: 25px 31px;
-            font-size: 24px;
             border: none;
             background-color: $body-color;
             margin-bottom: 30px;
@@ -100,7 +99,6 @@
             }
             &::placeholder {
               color: $brand-gray;
-              font-size: 24px;
             }
           }
 

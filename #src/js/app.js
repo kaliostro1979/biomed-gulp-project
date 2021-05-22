@@ -11,6 +11,7 @@
 @@include('bag.js')
 @@include('results.js')
 @@include('mobile-menu.js')
+@@include('map.js')
 
 
 $(document).ready(function() {
@@ -30,3 +31,4 @@ const swiper = new Swiper('.main-slider-container', {
         clickable: true,
     }
 });
+
