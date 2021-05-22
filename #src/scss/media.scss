@@ -14,9 +14,10 @@
 }
 
 @media (max-width: 991px) {
-  body input, body textarea{
+  body input, body textarea {
     font-size: 16px;
-    &::placeholder{
+
+    &::placeholder {
       font-size: 16px;
     }
   }
@@ -50,29 +51,34 @@
       height: 33vw;
     }
   }
-  .about-us{
+  .about-us {
     background-position: 83%;
-    &:before{
+
+    &:before {
       width: 100%;
       height: 55%;
       top: unset;
     }
-    &__empty{
+
+    &__empty {
       height: 480px;
     }
-    &__info{
+
+    &__info {
       padding: 50px 10px;
     }
   }
-  .contact-us{
-    &__form{
+  .contact-us {
+    &__form {
       margin-bottom: 80px;
     }
-    &-map__wrapper{
-      .decor-v{
+
+    &-map__wrapper {
+      .decor-v {
         display: none;
       }
-      .decor-h{
+
+      .decor-h {
         display: block;
         width: auto;
         left: 0;
@@ -80,58 +86,68 @@
         top: 200px;
       }
     }
-    &__info-block{
+
+    &__info-block {
       margin-top: 350px;
     }
-    &__item{
+
+    &__item {
       display: flex;
       align-items: center;
       padding: 0;
       width: 100%;
       text-align: left;
       margin-top: 20px;
-      &-img{
+
+      &-img {
         position: relative;
         max-width: 35px;
         top: unset;
         left: unset;
         transform: none;
       }
-      &-select{
+
+      &-select {
         margin-left: 30px;
         width: 100%;
         max-height: 52px;
         margin-bottom: 0;
         font-size: 16px;
-        .active-value{
+
+        .active-value {
           padding: 16px;
           text-align: left;
           width: 100%;
         }
-        ul{
-          li{
-            padding:15px;
+
+        ul {
+          li {
+            padding: 15px;
           }
         }
       }
-      &-info{
+
+      &-info {
         width: 100%;
         margin-left: 30px;
         padding: 15px;
       }
     }
   }
-  .footer{
+  .footer {
     font-size: 15px;
-    &__logo{
+
+    &__logo {
       width: 200px;
     }
-    .f-wrapper{
+
+    .f-wrapper {
       align-items: center;
     }
-    &-list{
-      ul{
-        li{
+
+    &-list {
+      ul {
+        li {
           margin-bottom: 10px;
         }
       }
@@ -140,22 +156,61 @@
 
   /*---- Pages ----*/
 
-  .results{
-    form{
-      input{
+  .results {
+    form {
+      input {
         margin-bottom: 20px;
       }
     }
   }
-  .analyses{
-    &-tags{
+  .analyses {
+    &-tags {
       overflow-x: auto;
-      ul{
+
+      ul {
         width: 150vw;
         justify-content: unset;
-        li{
+
+        li {
           margin: 0 10px;
           font-size: 12px;
+        }
+      }
+    }
+    &-item {
+      .title, .desc{
+        font-size: 16px;
+      }
+        .price {
+          font-size: 15px;
+          text-align: left;
+          .sell-price {
+            font-size: 12px;
+
+            &:before {
+              top: 9px;
+            }
+
+            span {
+              font-size: 10px;
+            }
+          }
+
+          .res-icon {
+            font-size: 13px;
+          }
+        }
+      .options{
+        a{
+          width: 35px;
+        }
+        .add-to__cart-btn{
+          font-size: 12px;
+          margin-left: 5px;
+          .bag-icon{
+            width: 20px;
+            margin-left: 10px;
+          }
         }
       }
     }
@@ -207,23 +262,27 @@
     }
   }
 
-  .analyzes{
-    &-products{
+  .analyzes {
+    &-products {
       padding: 22px 0;
-      &__inner{
-        &-item{
+
+      &__inner {
+        &-item {
           min-width: 80%;
-          &:hover{
+
+          &:hover {
             filter: drop-shadow(0 3px 5px rgba(24, 48, 66, .3));
           }
-          .options{
-            .has-emergency{
+
+          .options {
+            .has-emergency {
               width: 35px;
               margin-right: 10px;
             }
-            button{
+
+            button {
               font-size: 12px;
-              padding: 7px!important;
+              padding: 7px !important;
             }
           }
         }
@@ -231,19 +290,21 @@
     }
   }
 
-  .contact-us{
-    &-map__wrapper{
-      .decor-h{
+  .contact-us {
+    &-map__wrapper {
+      .decor-h {
         top: 232px;
       }
     }
-    &__info-block{
+
+    &__info-block {
       margin-top: 270px;
     }
   }
+
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
 
 }
 
@@ -309,7 +370,7 @@
         margin-top: 20px;
 
         span {
-          padding: 9px 28px!important;
+          padding: 9px 28px !important;
           font-size: 14px;
           background: linear-gradient(208deg, transparent 7px, #183042 0);
         }
@@ -332,23 +393,23 @@
           padding: 5px 10px 10px;
           width: 100%;
           min-width: 100%;
-          height: 180px;
           margin-bottom: 0;
+          .top{
+            margin-bottom: 50px!important;
+          }
 
           &__number {
-            font-size: 6px;
+            font-size: 14px;
           }
 
           &__title {
             margin-bottom: 15px;
-            span {
-              font-size: 10px;
-            }
+            font-size: 16px;
           }
 
           &__desc {
-            font-size: 10px;
-            line-height: 12px;
+            font-size: 14px;
+            line-height: 24px;
           }
 
           &__info {
@@ -361,6 +422,15 @@
                 }
               }
             }
+            .options{
+              .add-to__cart-btn{
+                font-size: 10px!important;
+                padding: 7px!important;
+                &-icon{
+                  width: 20px;
+                }
+              }
+            }
           }
         }
       }
@@ -369,6 +439,7 @@
   .research {
     &-item {
       box-shadow: 0 10px 22px rgba(39, 39, 39, 0.3);
+
       &__img {
         max-width: 76px;
         padding-top: 90px;
@@ -393,8 +464,10 @@
   .about-us {
     margin-top: 80px;
     background-position: 78%;
+
     &__info {
       padding: 20px 15px;
+
       &__title {
         h2 {
           font-size: 20px;
@@ -407,36 +480,42 @@
       }
 
       &__link {
-        a{
+        a {
           font-size: 14px;
         }
       }
     }
   }
-  .contact-us{
-    &__decor{
+  .contact-us {
+    &__decor {
       display: none;
     }
-    &__form{
+
+    &__form {
       margin-bottom: 80px;
-      &__title{
-        p{
+
+      &__title {
+        p {
           font-size: 12px;
         }
       }
-      form{
-        input, textarea{
+
+      form {
+        input, textarea {
           padding: 10px;
           font-size: 16px;
-          &::placeholder{
+
+          &::placeholder {
             font-size: 16px;
           }
         }
-        textarea{
+
+        textarea {
           min-height: 128px;
           max-height: 128px;
         }
-        button{
+
+        button {
           padding: 7px 10px;
           font-size: 14px;
           background: linear-gradient(208deg, transparent 7px, #183042 0);
@@ -444,39 +523,45 @@
         }
       }
     }
-    &__map{
+
+    &__map {
       height: 310px;
     }
-    &__item{
-      &-select{
-       .active-value{
-         padding: 8px;
-         font-size: 12px;
-       }
+
+    &__item {
+      &-select {
+        .active-value {
+          padding: 8px;
+          font-size: 12px;
+        }
       }
-      &-info{
+
+      &-info {
         font-size: 12px;
         padding-left: 8px;
         padding-right: 8px;
       }
     }
   }
-  .results{
+  .results {
     &-title {
       small {
         font-size: 12px;
       }
     }
-    form{
-      input{
+
+    form {
+      input {
         padding: 10px;
         font-size: 10px;
         margin-bottom: 10px;
-        &::placeholder{
+
+        &::placeholder {
           font-size: 10px;
         }
       }
-      button{
+
+      button {
         padding: 7px 10px;
         font-size: 10px;
         background: linear-gradient(208deg, transparent 7px, #183042 0);
@@ -484,60 +569,45 @@
       }
     }
   }
-  .analyses{
-    &-tags{
-      ul{
+  .analyses {
+    &-tags {
+      ul {
         width: 300vw;
       }
     }
-    &-item{
-      .number{
+
+    &-item {
+      .number {
         font-size: 7px;
       }
-      .title{
+
+      .title {
         font-size: 12px;
       }
-      .desc{
+
+      .desc {
         font-size: 12px;
-      }
-      .price{
-        font-size: 15px;
-        .sell-price{
-          font-size: 12px;
-          &:before{
-            top: 9px;
-          }
-          span{
-            font-size: 10px;
-          }
-        }
-        .res-icon{
-          font-size: 13px;
-        }
-      }
-      .options-wrapper{
-        .add-to__cart{
-          button{
-            padding: 7px 10px;
-            font-size: 10px;
-            background: linear-gradient(208deg, transparent 7px, $light-blue 0);
-            margin-top: 0;
-          }
-        }
       }
     }
   }
 }
 
 @media (max-width: 376px) {
-  .contact-us{
-    &-map__wrapper{
-      .decor-h{
+  .contact-us {
+    &-map__wrapper {
+      .decor-h {
         top: 270px;
       }
     }
-    &__info-block{
+    &__info-block {
       margin-top: 180px;
+    }
+  }
+  .analyses{
+    .options{
+      .add-to__cart-btn{
+        font-size: 10px;
+      }
     }
   }
 }

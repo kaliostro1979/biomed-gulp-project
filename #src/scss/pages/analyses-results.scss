@@ -19,8 +19,15 @@
         margin: 10px;
         cursor: pointer;
         text-decoration: underline;
-        &:hover{
+        text-decoration-thickness: 3px;
+        &.event{
           color: $brand-pink;
+        }
+        &.emergency{
+          color: $light-blue;
+        }
+        &:hover{
+          color: $brand-blue;
         }
         &.selected{
           color: $brand-blue;
@@ -29,7 +36,6 @@
     }
   }
   &-item{
-    font-weight: 700;
     background-color: $white;
     padding: 5px 20px 25px;
     position: relative;
@@ -41,23 +47,26 @@
       right: 0;
     }
     &:hover{
-      box-shadow: 0px 10px 22px rgba(24, 48, 66, 0.3);
+      box-shadow: 0 10px 22px rgba(24, 48, 66, 0.3);
     }
     .number{
       color: $brand-gray;
       font-size: 15px;
-      font-weight: 700;
+      font-weight: 400;
     }
     .title{
+      font-weight: 900;
       color: $brand-red;
       font-size: 20px;
     }
     .desc{
       font-size: 20px;
       margin-top: 20px;
+      font-weight: 900;
     }
     .price{
       font-size: 30px;
+      font-weight: 900;
       text-align: right;
       p{
         margin: 0;
@@ -66,12 +75,13 @@
         }
       }
       .sell-price{
-        font-size: 19px;
+        font-size: 15px;
+        font-weight: 500;
         color: $brand-gray;
         position: relative;
         display: inline-block;
         span{
-          font-size: 15px;
+          font-size: 13px;
         }
         &:before{
           content: '';
@@ -89,33 +99,28 @@
         font-family: 'icons';
       }
     }
-    .options-wrapper{
+    .options{
       display: flex;
-      justify-content: flex-end;
       align-items: center;
-      .options{
+      justify-content: flex-end;
+      height: 100%;
+      a{
+        display: block;
         width: 44px;
       }
-      .add-to__cart{
-        button{
-          display: flex;
-          align-items: center;
-          margin-left: 20px;
-          @extend %styled-links;
-          background: linear-gradient(208deg, transparent 11px, $light-blue 0);
-          color: $white;
-          font-weight: 700;
-          line-height: 30px;
-          letter-spacing: 0.05em;
-          border: none;
-          padding: 10px 27px 10px!important;
-          &:focus{
-            outline:none;
-          }
-          img{
-            width: 35px;
-            margin-left: 22px;
-          }
+      .add-to__cart-btn{
+        display: flex!important;
+        flex-wrap: wrap;
+        align-items: center;
+        border: none;
+        color: $white;
+        @extend %styled-links;
+        padding: 7px!important;
+        background: linear-gradient(208deg, transparent 11px, $light-blue 0)!important;
+        margin-left: 20px;
+        .bag-icon{
+          width: 30px;
+          margin-left: 10px;
         }
       }
     }
