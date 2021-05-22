@@ -8724,7 +8724,7 @@ fieldset:disabled .btn {
 }
 
 .call-home__row {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 .call-home .text-wrapper {
@@ -8739,6 +8739,10 @@ fieldset:disabled .btn {
 
 .call-home .text-wrapper p span {
   color: #52A4E3;
+}
+
+.call-home .text-wrapper .title h4 {
+  margin-bottom: 20px;
 }
 
 .call-home .icon-wrapper {
@@ -14023,7 +14027,6 @@ fieldset:disabled .btn {
   }
 
   .analyses-tags ul li {
-    margin: 0 10px;
     font-size: 12px;
   }
 
@@ -14065,6 +14068,22 @@ fieldset:disabled .btn {
   .analyses-item .options .add-to__cart-btn .bag-icon {
     width: 20px;
     margin-left: 10px;
+  }
+
+  .analyses .analyzes-header-tab__btn {
+    justify-content: flex-start;
+  }
+
+  .call-home {
+    padding-top: 40px;
+  }
+
+  .call-home__row {
+    padding-bottom: 0;
+  }
+
+  .call-home .icon-wrapper {
+    align-items: center;
   }
 }
 
@@ -14167,6 +14186,10 @@ fieldset:disabled .btn {
 
   .contact-us__info-block {
     margin-top: 270px;
+  }
+
+  .call-home .icon-wrapper {
+    align-items: center;
   }
 }
 
@@ -14290,12 +14313,11 @@ fieldset:disabled .btn {
 
   .analyzes-header-tab__btn {
     justify-content: flex-start;
-    margin-top: 20px;
   }
 
   .analyzes-header-tab__btn span {
     padding: 9px 28px !important;
-    font-size: 14px;
+    font-size: 12px;
     background: linear-gradient(208deg, transparent 7px, #183042 0);
   }
 
@@ -14508,6 +14530,14 @@ fieldset:disabled .btn {
 
   .analyses .options .add-to__cart-btn {
     font-size: 10px;
+  }
+
+  .call-home .text-wrapper .title p {
+    font-size: 14px;
+  }
+
+  .call-home .icon-wrapper .call-icon {
+    width: 117px;
   }
 }
 
