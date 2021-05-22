@@ -30,24 +30,27 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="s-header-title">
                     <p>Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ
                         (12 մուտացիա)</p>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <div class="s-header-price">
                     <p>5.000<span class="_icon-amd"></span></p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-8">
                 <div class="s-body">
                     <div class="s-body-switcher">
-                        <span class="active" data-name="desc">Նկարագրություն</span>
-                        <span data-name="props">Նախապատրաստում</span>
+                        <div class="s-body-switcher__inner">
+                            <span class="active" data-name="desc">Նկարագրություն</span>
+                            <span data-name="props">Նախապատրաստում</span>
+                            <span data-name="advice">Խորհուրդ է տրվում </span>
+                        </div>
                     </div>
                     <div class="s-body-tabs active" data-name="desc">
                         <p>Հետազոտությունից առաջ 30-40ր-ի ընթացքում բացառել սննդի ընդունումը (մինչև 1 տարեկան երեխաներ)
@@ -76,9 +79,22 @@
                             veritatis. A, alias, asperiores commodi dolor expedita in labore magnam non nostrum qui
                             recusandae tenetur voluptas voluptatem!</p>
                     </div>
+                    <div class="s-body-tabs" data-name="advice">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat tempore, voluptatum?
+                            Adipisci culpa, cupiditate dolor dolorum enim ex inventore, iusto magni modi nobis optio
+                            perspiciatis quae unde ut, veritatis vero.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere itaque placeat
+                            repudiandae suscipit vero voluptatem. Alias fuga in laudantium quisquam reprehenderit ut
+                            veritatis. A, alias, asperiores commodi dolor expedita in labore magnam non nostrum qui
+                            recusandae tenetur voluptas voluptatem!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur facere itaque placeat
+                            repudiandae suscipit vero voluptatem. Alias fuga in laudantium quisquam reprehenderit ut
+                            veritatis. A, alias, asperiores commodi dolor expedita in labore magnam non nostrum qui
+                            recusandae tenetur voluptas voluptatem!</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-5 offset-1">
+            <div class="col-lg-4 mt-5 mt-lg-0">
                 <div class="s-body-btn">
                     <div class="s-body-btn__img">
                         <img src="/images/icons/emergency.png" alt="">
@@ -93,9 +109,9 @@
     </div>
 </section>
 
-<section class="about-us-slider">
+<section class="about-us-slider s-analyze-slider">
     <div class="container">
-        <div class="row">
+        <!--<div class="row">
             <div class="col-lg-12">
                 <div class="about-us-slider-header">
                     <div class="about-us-slider-header-title">
@@ -107,11 +123,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="row">
             <div class="col-lg-12">
                 <div class="about-us-slider-items__container doctors-slider__container  mb-0">
-                    <div class="about-us-slider-items__container__inner doctors-slider__container__inner pb-0">
+                    <!--<div class="about-us-slider-items__container__inner doctors-slider__container__inner pb-0">
                         <div class="analyzes-products__inner-item">
                             <div class="top">
                                 <small class="analyzes-products__inner-item__number">№ 1636</small>
@@ -214,10 +230,51 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
+                    @@include('./html-components/_analyses-section.html')
                 </div>
-                <div class="show-more">
+              <!--  <div class="show-more">
                     <a href="/analisyes-page.html">ՏԵՍՆԵԼ ԱՎԵԼԻՆ</a>
+                </div>-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row contact-us__info-block">
+                    <div class="col-lg-4">
+                        <div class="contact-us__item">
+                            <div class="contact-us__item-img">
+                                <img src="/images/icons/branch.png" alt="">
+                            </div>
+                            <div class="contact-us__item-select">
+                                <div class="active-value"></div>
+                                <span class="_icon-chevrone-down"></span>
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-us__item">
+                            <div class="contact-us__item-img">
+                                <img src="/images/icons/phone.png" alt="">
+                            </div>
+                            <div class="contact-us__item-info">
+                                Հեռ.: <span class="info-tel"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="contact-us__item">
+                            <div class="contact-us__item-img">
+                                <img src="/images/icons/mail.png" alt="">
+                            </div>
+                            <div class="contact-us__item-info">
+                                Email: <span class="info-email"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

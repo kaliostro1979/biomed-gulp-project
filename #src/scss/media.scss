@@ -243,6 +243,22 @@
       }
     }
   }
+  .single-analyse{
+    .s-body{
+
+      &-switcher{
+        overflow-x: auto;
+        &__inner{
+          flex-wrap: nowrap;
+        }
+      }
+    }
+  }
+  .s-analyze-slider{
+    .contact-us__info-block{
+      margin-top: 40px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -652,6 +668,47 @@
             }
           }
         }
+      }
+    }
+  }
+  .single-analyse{
+    padding-top: 40px;
+    margin-bottom: 80px;
+    .s-header{
+      &-number{
+        font-size: 12px;
+      }
+      &-title{
+        font-size: 14px;
+        line-height: 21px;
+      }
+      &-category{
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+      &-price{
+        font-size: 18px;
+        p{
+          span{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .s-body{
+      &-switcher{
+        overflow-x: auto;
+        margin: 15px 0;
+        display: block;
+        &__inner{
+          font-size: 16px;
+          span{
+            margin-right: 15px;
+          }
+        }
+      }
+      &-tabs{
+        font-size: 14px;
       }
     }
   }

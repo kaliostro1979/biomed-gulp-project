@@ -23,3 +23,5 @@ $.fn.hScroll = function (amount) {
 };
 
 $('.analyzes-products').hScroll(100);
+$('.about-us-slider-items__container__inner').hScroll(100);
+

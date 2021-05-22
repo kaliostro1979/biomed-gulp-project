@@ -131,6 +131,8 @@ $.fn.hScroll = function (amount) {
 };
 
 $('.analyzes-products').hScroll(100);
+$('.about-us-slider-items__container__inner').hScroll(100);
+
 
 const techSliderChevronLeft = $('.tech-slider ._icon-chevrone_left')
 const techSliderChevronRight = $('.tech-slider ._icon-chevrone_right')
