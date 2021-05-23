@@ -7659,7 +7659,7 @@ fieldset:disabled .btn {
 .pagination {
   display: flex;
   justify-content: center;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 159px;
 }
@@ -7683,7 +7683,7 @@ fieldset:disabled .btn {
 
 .pagination ul li a span {
   font-family: 'icons';
-  font-size: 18px;
+  font-size: 14px;
 }
 
 /*Pages*/
@@ -8508,7 +8508,7 @@ fieldset:disabled .btn {
   padding: 36px 20px;
   color: #183042;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .orders__item-body table td:first-child {
@@ -14130,6 +14130,10 @@ fieldset:disabled .btn {
     width: 38vw;
     height: 43vw;
   }
+
+  .contact-us__item-select .active-value {
+    padding: 2px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -15126,6 +15130,16 @@ fieldset:disabled .btn {
 
   .contact-us__info-block {
     margin-top: 180px;
+  }
+
+  .contact-us__item-select .active-value {
+    padding: 8px 25px 8px 8px;
+  }
+
+  .contact-us__item-info {
+    font-size: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .analyses .options .add-to__cart-btn {

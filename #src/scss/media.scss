@@ -11,6 +11,15 @@
       height: 43vw;
     }
   }
+  .contact-us {
+    &__item {
+      &-select {
+        .active-value {
+          padding: 2px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -824,6 +833,7 @@
         }
       }
     }
+
     .has-no-account-wrapper {
       .no-account {
         &__text {
@@ -927,6 +937,7 @@
         padding: 9px 22px !important;
       }
     }
+
     .orders {
       &__item {
         &-header {
@@ -957,6 +968,7 @@
         }
       }
     }
+
     .settings {
       .register-form {
         form {
@@ -985,15 +997,17 @@
           }
         }
       }
-      .has-no-account-wrapper{
-        .has-no__account{
-          .no-account__text{
+
+      .has-no-account-wrapper {
+        .has-no__account {
+          .no-account__text {
             font-size: 14px;
             line-height: 21px;
             margin-bottom: 20px;
           }
-          .no-account__link{
-            a{
+
+          .no-account__link {
+            a {
               font-size: 14px;
               padding: 8px 20px;
             }
@@ -1002,8 +1016,8 @@
       }
     }
   }
-  .results{
-    .loaded-header{
+  .results {
+    .loaded-header {
       margin-bottom: 0;
     }
   }
@@ -1019,6 +1033,19 @@
 
     &__info-block {
       margin-top: 180px;
+    }
+    &__item {
+      &-select {
+        .active-value {
+          padding: 8px 25px 8px 8px;
+        }
+      }
+
+      &-info {
+        font-size: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
     }
   }
   .analyses {
