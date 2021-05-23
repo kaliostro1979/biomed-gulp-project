@@ -1,46 +1,55 @@
 @import "../variables";
 @import "../templates";
 
-.top-header{
+.top-header {
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;
-  &__result-link{
-  @extend
-      %styled-links;
-    a{
+
+  &__result-link {
+    @extend %styled-links;
+    padding: 20px;
+
+    a {
       color: $white;
       font-weight: 500;
     }
   }
 }
 
-.main-header{
+.main-header {
   background-color: $white;
   padding: 20px 0;
-  &__wrapper{
+
+  &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  &__wrapper__logo{
+
+  &__wrapper__logo {
     width: 216px;
   }
-  &__wrapper__search{
+
+  &__wrapper__search {
     display: flex;
     align-items: center;
-    &-wrapper{
+
+    &-wrapper {
       position: relative;
-      input{
+
+      input {
         background: $body-color;
         border: none;
         padding: 3px 22px;
         border-radius: 5px;
-        &:focus{
+
+        &:focus {
           outline: none;
         }
       }
-      button{
+
+      button {
         background: transparent;
         border: none;
         outline: none;
@@ -49,7 +58,8 @@
         right: 10px;
         width: 20px;
         height: 20px;
-        &:before{
+
+        &:before {
           content: '';
           width: 20px;
           height: 20px;
@@ -63,17 +73,21 @@
         }
       }
     }
-    .user-control{
+
+    .user-control {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      &__items{
+
+      &__items {
         margin-left: 40px;
       }
-      &__bag{
+
+      &__bag {
         width: 35px;
         position: relative;
-        &-count{
+
+        &-count {
           position: absolute;
           display: block;
           width: 18px;
@@ -88,27 +102,32 @@
           right: -7px;
           clip-path: $hexagonal;
         }
-        svg{
+
+        svg {
           width: 100%;
         }
       }
-      &__account{
+
+      &__account {
         width: 25px;
       }
-      &__language-switcher{
-        .select2-selection--single{
-          font-size: 12px!important;
-          font-weight: 700!important;
+
+      &__language-switcher {
+        .select2-selection--single {
+          font-size: 12px !important;
+          font-weight: 700 !important;
           border: none;
           background-color: $body-color;
           height: 30px;
 
           text-align: center;
-          .select2-selection__rendered{
+
+          .select2-selection__rendered {
             padding: 0;
             line-height: 30px;
           }
-          .select2-selection__arrow{
+
+          .select2-selection__arrow {
             display: none;
           }
         }
@@ -117,8 +136,8 @@
   }
 }
 
-.select2-container--open{
-  .custom-dropdown{
+.select2-container--open {
+  .custom-dropdown {
     border: 1px solid $body-color;
     font-size: 12px;
     text-align: center;

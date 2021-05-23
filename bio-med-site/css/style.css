@@ -6521,6 +6521,10 @@ fieldset:disabled .btn {
   justify-content: flex-end;
 }
 
+.top-header__result-link {
+  padding: 20px;
+}
+
 .top-header__result-link a {
   color: #ffffff;
   font-weight: 500;
@@ -7534,6 +7538,7 @@ fieldset:disabled .btn {
 }
 
 .contact-us__form form button {
+  padding: 20px;
   border: none;
   color: #ffffff;
   min-width: 130px;
@@ -8426,7 +8431,7 @@ fieldset:disabled .btn {
 }
 
 .orders__item.open .orders__item-header-icon {
-  transform: rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
   transition: all .5s ease;
 }
 
@@ -8436,13 +8441,10 @@ fieldset:disabled .btn {
 }
 
 .orders__item-header {
-  padding: 28px 80px 28px 28px;
+  padding: 8px 28px;
   width: 100%;
   border: 1px solid #b0b8c0;
   border-radius: 6px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
   background-color: #ffffff;
 }
@@ -8459,19 +8461,14 @@ fieldset:disabled .btn {
 
 .orders__item-header-title .number {
   color: #b0b8c0;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
-  position: absolute;
-  top: 8px;
-  left: 28px;
 }
 
 .orders__item-header-date {
   color: #52A4E3;
   font-size: 18px;
-  display: flex;
-  justify-content: flex-end;
-  line-height: 22px;
+  line-height: 27px;
   letter-spacing: 0.05em;
 }
 
@@ -8479,9 +8476,10 @@ fieldset:disabled .btn {
   font-family: icons;
   position: absolute;
   top: 50%;
-  right: 28px;
+  right: 15px;
   transition: all .5s ease;
   transform: translateY(-50%);
+  font-size: 14px;
 }
 
 .orders__item-body {
@@ -9139,6 +9137,7 @@ fieldset:disabled .btn {
 }
 
 .results form button {
+  padding: 20px;
   border: none;
   color: #ffffff;
 }
@@ -9150,59 +9149,39 @@ fieldset:disabled .btn {
 .results .loaded-header .title {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.results .loaded-header .title h4 {
+.results .loaded-header .title .name {
+  position: relative;
+  padding-left: 45px;
+}
+
+.results .loaded-header .title .name h4 {
   margin-bottom: 0;
 }
 
-.results .loaded-header .title span {
+.results .loaded-header .title .name span {
   font-family: 'icons';
   font-size: 30px;
-  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.results .loaded-header .title .birth-date {
+  padding-left: 45px;
+  line-height: 30px;
+}
+
+.results .loaded-header .title .birth-date h4 {
+  margin-bottom: 0;
 }
 
 .results .loaded-header .date {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   font-size: 18px;
   color: #52A4E3;
-}
-
-.results .loaded-table table {
-  width: 100%;
-  border: 2px solid #b0b8c0;
-}
-
-.results .loaded-table table tr {
-  border-bottom: 2px solid #b0b8c0;
-}
-
-.results .loaded-table table th,
-.results .loaded-table table td {
-  border-right: 2px solid #b0b8c0;
-  padding: 8px 20px;
-  color: #183042;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.results .loaded-table table th .number,
-.results .loaded-table table td .number {
-  font-size: 15px;
-  color: #b0b8c0;
-}
-
-.results .loaded-table table th p,
-.results .loaded-table table td p {
-  margin: 0;
-}
-
-.results .loaded-table table thead tr th {
-  color: #b0b8c0;
-  font-weight: 400;
-  font-size: 18px;
 }
 
 .quality-control {
@@ -15065,6 +15044,78 @@ fieldset:disabled .btn {
 
   .bag-order-tabs .bag-prices-item strong span {
     font-size: 15px;
+  }
+
+  .account-page .analyzes-header-tab__btn span {
+    padding: 9px 22px !important;
+  }
+
+  .account-page .orders__item-header {
+    padding: 8px;
+  }
+
+  .account-page .orders__item-header-title {
+    font-size: 12px;
+  }
+
+  .account-page .orders__item-header-date {
+    font-size: 14px;
+  }
+
+  .account-page .orders__item-body table thead tr {
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  .account-page .orders__item-body table thead tr th {
+    width: unset;
+  }
+
+  .account-page .settings .register-form form .full-name {
+    margin-bottom: 4px;
+  }
+
+  .account-page .settings .register-form form .full-name span {
+    min-width: 50px;
+    margin-left: 10px;
+    font-size: 30px;
+    line-height: 47px;
+  }
+
+  .account-page .settings .register-form form input {
+    padding: 10px;
+  }
+
+  .account-page .settings .register-form form input::-moz-placeholder {
+    font-size: 12px;
+  }
+
+  .account-page .settings .register-form form input:-ms-input-placeholder {
+    font-size: 12px;
+  }
+
+  .account-page .settings .register-form form input::placeholder {
+    font-size: 12px;
+  }
+
+  .account-page .settings .register-form form button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .account-page .settings .has-no-account-wrapper .has-no__account .no-account__text {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  .account-page .settings .has-no-account-wrapper .has-no__account .no-account__link a {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .results .loaded-header {
+    margin-bottom: 0;
   }
 }
 

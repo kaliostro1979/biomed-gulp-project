@@ -8,7 +8,6 @@
     &.results-info {
       display: block;
     }
-
     &.loaded {
       display: none;
     }
@@ -38,6 +37,7 @@
 
     button {
       @extend %styled-links;
+      padding: 20px;
       border: none;
       color: $white;
     }
@@ -46,63 +46,38 @@
   .loaded {
     &-header {
       margin-bottom: 40px;
-
       .title {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        .name{
+          position: relative;
+          padding-left: 45px;
+          h4 {
+            margin-bottom: 0;
+          }
 
-        h4 {
-          margin-bottom: 0;
+          span {
+            font-family: 'icons';
+            font-size: 30px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
         }
-
-        span {
-          font-family: 'icons';
-          font-size: 30px;
-          margin-right: 10px;
+        .birth-date{
+          padding-left: 45px;
+          line-height: 30px;
+          h4{
+            margin-bottom: 0;
+          }
         }
       }
 
       .date {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
         font-size: 18px;
         color: $light-blue;
-      }
-    }
-
-    &-table {
-      table {
-        width: 100%;
-        border: 2px solid $brand-gray;
-
-        tr {
-          border-bottom: 2px solid $brand-gray;
-        }
-
-        th, td {
-          border-right: 2px solid $brand-gray;
-          padding: 8px 20px;
-          color: $brand-blue;
-          font-weight: 700;
-          font-size: 20px;
-          .number{
-            font-size: 15px;
-            color: $brand-gray;
-          }
-          p {
-            margin: 0;
-          }
-        }
-        thead {
-          tr {
-            th {
-              color: $brand-gray;
-              font-weight: 400;
-              font-size: 18px;
-            }
-          }
-        }
       }
     }
   }

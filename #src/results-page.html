@@ -15,7 +15,7 @@
 @@include('./html-components/_header.html')
 @@include('./html-components/_header-mobile.html')
 
-<section class="results">
+<section class="results account-page">
     <div class="container results-info">
         <div class="row">
             <div class="col-lg-12">
@@ -54,15 +54,15 @@
             <div class="col-lg-12">
                 <div class="loaded-header">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                             <div class="title">
-                                <span class="_icon-male"></span>
-                                <h4>Հակոբ Ավագյան 18․05․1986</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="date">
-                                <p>Ամսաթիվ։ <span>05․06.2021</span></p>
+                                <div class="name">
+                                    <span class="_icon-male"></span>
+                                    <h4>Հակոբ Ավագյան</h4>
+                                </div>
+                                <div class="birth-date">
+                                    <h4>18․05․1986</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -71,88 +71,167 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <div class="loaded-table">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Թեստի անուն</th>
-                            <th>Արդյունք</th>
-                            <th>Նորմա ըստ սեռի և տարիքի</th>
-                            <th>Միավոր</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                <div class="table-data">
-                                    <p class="number">№ <span>1636</span></p>
-                                    <p class="table-data__title">Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ (12 մուտացիա)</p>
+                <div class="account-page-tabs orders active" data-name="orders">
+                    <div class="orders__item">
+                        <div class="orders__item-header">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="orders__item-header-title">
+                                        <div class="number">
+                                            <p>№<span> 1636</span></p>
+                                        </div>
+                                        <p>Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ (12 մուտացիա)</p>
+                                    </div>
                                 </div>
-                            </td>
-                            <td>
-                                <div class="table-data">
-                                    <p>19,2</p>
+                                <div class="col-lg-3 mt-3 mt-lg-0">
+                                    <div class="orders__item-header-date">
+                                        <p>Ամսաթիվ։ <span>05․06.21</span></p>
+                                    </div>
                                 </div>
-                            </td>
-                            <td>
-                                <div class="table-data">
-                                    <p><37․0</p>
+                            </div>
+                            <div class="orders__item-header-icon">
+                                <span class="_icon-chevrone_right"></span>
+                            </div>
+                        </div>
+                        <div class="orders__item-body">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Արդյունք</th>
+                                    <th>Նորմա ըստ սեռի և տարիքի</th>
+                                    <th>Միավոր</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>19,2</td>
+                                    <td><37․0</td>
+                                    <td>ռի</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="orders__item">
+                        <div class="orders__item-header">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="orders__item-header-title">
+                                        <div class="number">
+                                            <p>№<span> 1636</span></p>
+                                        </div>
+                                        <p>Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ (12 մուտացիա)</p>
+                                    </div>
                                 </div>
-                            </td>
-                            <td>
-                                <div class="table-data">
-                                    <p>ռի</p>
+                                <div class="col-lg-3 mt-3 mt-lg-0">
+                                    <div class="orders__item-header-date">
+                                        <p>Ամսաթիվ։ <span>05․06.21</span></p>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="table-data">
-                                    <p class="number">№ <span>1636</span></p>
-                                    <p class="table-data__title">Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ (12 մուտացիա)</p>
+                            </div>
+                            <div class="orders__item-header-icon">
+                                <span class="_icon-chevrone_right"></span>
+                            </div>
+                        </div>
+                        <div class="orders__item-body">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Արդյունք</th>
+                                    <th>Նորմա ըստ սեռի և տարիքի</th>
+                                    <th>Միավոր</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>19,2</td>
+                                    <td><37․0</td>
+                                    <td>ռի</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="orders__item">
+                        <div class="orders__item-header">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="orders__item-header-title">
+                                        <div class="number">
+                                            <p>№<span> 1636</span></p>
+                                        </div>
+                                        <p>Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ (12 մուտացիա)</p>
+                                    </div>
                                 </div>
-                            </td>
-                            <td>
-                                <div class="table-data">
-                                    <p>19,2</p>
+                                <div class="col-lg-3 mt-3 mt-lg-0">
+                                    <div class="orders__item-header-date">
+                                        <p>Ամսաթիվ։ <span>05․06.21</span></p>
+                                    </div>
                                 </div>
-                            </td>
-                            <td>
-                                <div class="table-data">
-                                    <p><37․0</p>
+                            </div>
+                            <div class="orders__item-header-icon">
+                                <span class="_icon-chevrone_right"></span>
+                            </div>
+                        </div>
+                        <div class="orders__item-body">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Արդյունք</th>
+                                    <th>Նորմա ըստ սեռի և տարիքի</th>
+                                    <th>Միավոր</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>19,2</td>
+                                    <td><37․0</td>
+                                    <td>ռի</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="orders__item">
+                        <div class="orders__item-header">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="orders__item-header-title">
+                                        <div class="number">
+                                            <p>№<span> 1636</span></p>
+                                        </div>
+                                        <p>Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ (12 մուտացիա)</p>
+                                    </div>
                                 </div>
-                            </td>
-                            <td>
-                                <div class="table-data">
-                                    <p>ռի</p>
+                                <div class="col-lg-3 mt-3 mt-lg-0">
+                                    <div class="orders__item-header-date">
+                                        <p>Ամսաթիվ։ <span>05․06.21</span></p>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="table-data">
-                                    <p class="number">№ <span>1636</span></p>
-                                    <p class="table-data__title">Թրոմբոֆիլիայի զարգացման գենետիկական ռիսկ (12 մուտացիա)</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table-data">
-                                    <p>19,2</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table-data">
-                                    <p><37․0</p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table-data">
-                                    <p>ռի</p>
-                                </div>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                            <div class="orders__item-header-icon">
+                                <span class="_icon-chevrone_right"></span>
+                            </div>
+                        </div>
+                        <div class="orders__item-body">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Արդյունք</th>
+                                    <th>Նորմա ըստ սեռի և տարիքի</th>
+                                    <th>Միավոր</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>19,2</td>
+                                    <td><37․0</td>
+                                    <td>ռի</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

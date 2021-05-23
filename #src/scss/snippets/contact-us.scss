@@ -47,6 +47,7 @@
       }
       button{
         @extend %styled-links;
+        padding: 20px;
         border: none;
         color: $white;
         min-width: 130px;
