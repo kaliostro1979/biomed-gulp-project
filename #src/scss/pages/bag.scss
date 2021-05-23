@@ -12,9 +12,8 @@
   .remove-all{
     color: $brand-gray;
     text-align: right;
-    padding-right: 65px;
     margin-bottom: 13px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
   }
@@ -34,14 +33,15 @@
 
         .note {
           font-size: 18px;
-          line-height: 22px;
+          line-height: 27px;
           letter-spacing: 0.05em;
           margin-bottom: 65px;
         }
 
         .button {
           @extend %styled-links;
-
+          padding: 20px;
+          font-weight: 500;    
           a {
             color: $white;
             line-height: 30px;
@@ -62,6 +62,9 @@
     }
   }
   &-order {
+    &-bag{
+      width: 44px;
+    }
     background-color: $white;
     padding: 40px 0;
     box-shadow: 0px 10px 22px rgba(39, 39, 39, 0.3);
@@ -87,10 +90,12 @@
           display: block;
         }
         form {
+          padding: 0 40px;
           text-align: center;
+          display: inline-block;
           input {
             width: 100%;
-            padding: 25px 31px;
+            padding: 20px;
             border: none;
             background-color: $body-color;
             margin-bottom: 30px;
@@ -104,18 +109,11 @@
 
           .contact-us__item-select {
             margin-bottom: 30px;
-            label{
-              input{
-                text-align: left;
-                color: $brand-gray;
-              }
-              span{
-                top: 35px;
-                right: 10px;
-              }
-            }
+            margin-left: 0;
+            background-color: $body-color;      
             .active-value {
               margin: 0;
+              padding: 20px;
             }
 
             ul {
@@ -134,36 +132,41 @@
 
           button {
             border: none;
-            min-width: 369px;
-            margin: 50px auto;
             display: block;
             @extend %styled-links;
+            padding: 20px;
             color: $white;
-            background: linear-gradient(208deg, transparent 17px, $light-blue 0);
+            background: linear-gradient(208deg, transparent 11px, $light-blue 0)!important;
             line-height: 30px;
             letter-spacing: 0.05em;
+            float: right;          
           }
         }
       }
 
       .bag-prices {
+        margin-top: 40px;
         &-item {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          font-size: 35px;
           color: $brand-blue;
           line-height: 22px;
           letter-spacing: 0.05em;
-          padding: 15px 20px;
+          padding: 5px 20px;
+          width: 100%;
 
           p {
             font-size: 18px;
+            margin: 0;
           }
-
+          strong{
+            font-size: 30px;
+            font-weight: 500;
+          }
           span {
             font-family: 'icons';
-            font-size: 28px;
+            font-size: 22px;
             font-weight: 400;
           }
         }
@@ -173,6 +176,9 @@
   &-items{
     .analyzes-products__inner-item{
       position: relative;
+      width: 100%;
+      min-width: 100%;
+      margin: 0 0 40px;
       .remove__btn{
         width: 27px;
         position: absolute;

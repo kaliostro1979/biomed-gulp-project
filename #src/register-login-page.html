@@ -34,10 +34,10 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 mt-4">
                             <div class="login user-switcher__inner active" data-name="login">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 mb-5 mb-lg-0">
                                         <div class="register-form">
                                             <form>
                                                 <input placeholder="էլ հասցե կամ հեռախոսի համար*" type="text" required/>
@@ -49,7 +49,7 @@
                                             <a href="/account-page.html">Account Page</a>
                                         </div>
                                     </div>
-                                    <div class="col-lg-5 offset-1">
+                                    <div class="col-lg-5 offset-0 offset-lg-1">
                                         <div class="has-no-account-wrapper">
                                             <div class="has-no__account">
                                                 <div class="no-account__title">
@@ -60,7 +60,7 @@
                                                         ստանալ հավատարիմ հաճախորդի առավելությունները</p>
                                                 </div>
                                                 <div class="no-account__link">
-                                                    <a href="#">Հետազոտություն արդյունքները</a>
+                                                    <a href="#">ՀԵՏԱԶՈՏՈՒԹՅՈՒՆՆԵՐ</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -69,13 +69,13 @@
                             </div>
                             <div class="register user-switcher__inner" data-name="register">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 mb-5 mb-lg-0">
                                         <div class="register-form">
                                             <form>
                                                 <div class="full-name">
                                                     <input placeholder="Անուն Ազգանուն*" type="text" required/>
-                                                    <span class="_icon-male active"></span>
-                                                    <span class="_icon-female"></span>
+                                                    <span class="_icon-male active" data-type="male"></span>
+                                                    <span class="_icon-female" data-type="female"></span>
                                                 </div>
                                                 <input placeholder="Ծննդյան օր ամիս տարեթիվ*" type="text" required/>
                                                 <input placeholder="էլ հասցե*" type="email" required/>
@@ -86,7 +86,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="col-lg-5 offset-1">
+                                    <div class="col-lg-5 offset-0 offset-lg-1">
                                         <div class="has-no-account-wrapper">
                                             <div class="has-no__account">
                                                 <div class="no-account__title">
@@ -97,7 +97,7 @@
                                                         ստանալ հավատարիմ հաճախորդի առավելությունները</p>
                                                 </div>
                                                 <div class="no-account__link">
-                                                    <a href="#">Հետազոտություն արդյունքները</a>
+                                                    <a href="#">ՀԵՏԱԶՈՏՈՒԹՅՈՒՆՆԵՐ</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,6 +112,7 @@
     </div>
 </section>
 
+@@include('./html-components/_contact-us.html')
 @@include('./html-components/_footer.html')
 
 

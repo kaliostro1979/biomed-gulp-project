@@ -39,16 +39,22 @@
           display: inline-block;
           background-color: $white;
           text-align: center;
-          min-width: 80px;
-          height: 100%;
+          min-width: 75px;
           margin-left: 10px;
           font-size: 40px;
           line-height: 70px;
           color: $brand-gray;
           cursor: pointer;
-          &.active{
-            color: #dfbdbd;
-          }
+          &.active{        
+            &.active-female{              
+              background-color: $brand-pink;
+              color: $white;
+            }
+            &.active-male{
+              background-color: $light-blue;
+              color: $white;
+            }
+          }      
           &:hover{
             color: #dfbdbd;
           }
@@ -59,9 +65,9 @@
         border-radius: 5px;
         width: 100%;
         background-color: $white;
-        padding: 25px 31px;
-        margin-bottom: 30px;
-        line-height: 29px;
+        padding: 20px;
+        margin-bottom: 20px;
+        line-height: 27px;
         &::placeholder{
           color: $brand-gray;
         }
@@ -73,16 +79,18 @@
         @extend %styled-links;
         border: none;
         color: $white;
-        padding: 11px 60px!important;
+        padding: 20px;
         max-width: 280px;
         float: right;
+        margin-top: 20px;
         &:focus{
           outline: none;
         }
       }
       a{
-        font-size: 15px;
+        font-size: 16px;
         color: $light-blue;
+        display: block;
       }
     }
   }
@@ -95,9 +103,9 @@
       &__text{
         font-size: 18px;
         color: $brand-gray;
-        line-height: 22px;
+        line-height: 27px;
         letter-spacing: 0.05em;
-        margin-bottom: 38px;
+        margin-bottom: 40px;
         margin-top: 20px;
       }
       &__link{
@@ -105,6 +113,8 @@
           @extend %styled-links;
           color: $white;
           background: linear-gradient(208deg, transparent 17px, $light-blue 0);
+          font-weight: 500;
+          padding: 18px 20px;
         }
       }
     }

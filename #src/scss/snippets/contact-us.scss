@@ -5,6 +5,7 @@
 .contact-us{
   margin: 120px 0 0;
   position: relative;
+  overflow: hidden;
   &__decor{
     position: absolute;
     right: 0;
@@ -96,31 +97,35 @@
       padding: 13px;
     }
     &-select{
-      max-height: 48px;
       position: relative;
       background-color: $white;
       cursor: pointer;
-        .active-value{
-          padding: 3px 12px;
-          border: none;
-          width: 65%;
+        .active-value{   
+          padding: 13px;
           text-align: left;
           white-space: normal;
+          position: relative;
         }
-        span{
+        .select-box__icon{
           font-family: 'icons';
           position: absolute;
-          top: 18px;
+          top: 50%;
           right: 13px;
           font-size: 11px;
           color: $brand-red;
+          transform: translateY(-50%) rotate(0deg);
           transition: all linear .3s;
           &.icon-open{
-            transform: rotate(180deg);
+            transform: translateY(-50%) rotate(180deg);
             transition: all linear .3s;
           }
         }
       ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
         max-height: 0;
         overflow: hidden;
         position: relative;

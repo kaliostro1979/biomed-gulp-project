@@ -1,9 +1,9 @@
 @import "variables";
 
 %styled-links{
-  padding: 16px;
+  //padding: 16px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   background: linear-gradient(208deg, transparent 11px, $brand-blue 0);
   display: inline-block;
@@ -12,15 +12,31 @@
   letter-spacing: 0.05em;
 }
 
-
-%styled-links-mobile{
-  padding: 7px 10px;
-  text-align: center;
-  font-size: 10px;
-  position: relative;
-  background: linear-gradient( 208deg, transparent 7px,#183042 0);
-  display: inline-block;
-  text-transform: uppercase;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-}
+/*
+//%styled-links{
+//  position: relative;
+//  display: flex;
+//  justify-content: space-between;
+//  align-items: center;
+//  color: $white;
+//  padding: 1px 20px;
+//  background-color: $brand-blue;
+//  width: max-content;
+//  &:before, &:after{
+//    content: "";
+//    position: absolute;
+//    left: 0;
+//    right: 0;
+//    bottom: 100%;
+//    border-bottom: 15px solid $brand-blue;
+//  }
+//  &:before{
+//    border-right: 15px solid transparent;
+//  }
+//  &:after{
+//    bottom: auto;
+//    top: 100%;
+//    border-bottom: 15px solid $brand-blue;
+//  }
+//}
+*/

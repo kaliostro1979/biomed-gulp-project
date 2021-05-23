@@ -276,6 +276,11 @@
       }
     }
   }
+  .bag{
+    .contact-us__info-block{
+      margin-top: 80px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -375,7 +380,6 @@
   body h4 {
     font-size: 20px;
   }
-
   .slider {
     &-text {
       &-line {
@@ -551,6 +555,7 @@
     }
   }
   .contact-us {
+    margin: 70px 0 0;
     &__decor {
       display: none;
     }
@@ -595,8 +600,13 @@
     &__item {
       &-select {
         .active-value {
-          padding: 8px;
+          padding: 16px 8px;
           font-size: 12px;
+        }
+        ul{
+          li{
+            font-size: 12px;
+          }
         }
       }
 
@@ -755,6 +765,121 @@
       }
     }
   }
+  .login-register{
+    padding-top: 40px;
+    .register-form{
+      form{
+        input{
+          font-size: 16px;
+          padding: 10px;
+          &::placeholder{
+            font-size: 12px;
+          }
+        }
+        .full-name{
+          span{
+            font-size: 32px;
+            line-height: 48px;
+            min-width: 60px;
+          }
+        }
+        button{
+          font-size: 14px;
+          padding: 8px 30px;
+          margin-top: 20px;
+        }
+
+      a{
+        font-size: 14px;
+      }
+      }
+    }
+    .has-no-account-wrapper{
+      .no-account{
+        &__text{
+          font-size: 14px;
+        }
+        &__link{
+          a{
+            padding: 8px 20px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .bag{
+    padding-top: 40px;
+    &.empty{
+      .empty-bag{
+        &__icon-wrapper{
+          .empty-bag__icon{
+            width: 100px;
+          }  
+        }         
+        &__text{         
+          .note{
+            font-size: 14px;
+            line-height: 27px;
+          }
+          .button{
+            padding: 8px 20px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    &-with-item__wrapper{
+      .remove-all{
+        font-size: 14px;
+        padding: 0;
+      }
+    }
+    &-items{
+      .analyzes-products__inner-item{
+        .remove__btn{
+          width: 15px;
+          top: 5px;
+          right: 10px;
+        }
+        &__info{
+          .options{
+            &-bag{
+              width: 44px;
+            }
+          }
+        }
+      }
+    }
+    &-order{
+      &-tabs{
+        &__inner{
+          form{
+            padding: 0 15px;
+            button{
+              font-size: 14px;
+              padding: 8px 20px;
+            }
+          }
+        }
+        .bag-prices{
+          &-item{
+            p{
+              font-size: 14px;
+            }
+            strong{
+              font-size: 20px;
+              span{
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
 }
 
 @media (max-width: 376px) {

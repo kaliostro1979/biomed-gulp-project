@@ -22,7 +22,7 @@ const contactInfo = [
 ]
 
 const contactInfoUl = $('.contact-us__item-select ul')
-const activeValue = $('.active-value')
+const activeValue = $('.active-value__text')
 const contactInfoTelNumber = $('.info-tel')
 const contactInfoEmail = $('.info-email')
 const dropDownChevrone = $('._icon-chevrone-down')

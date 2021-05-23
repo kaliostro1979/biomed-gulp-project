@@ -14,6 +14,7 @@
 
 @@include('./html-components/_header.html')
 @@include('./html-components/_header-mobile.html')
+
 <section class="bag">
     <div class="container">
         <div class="row">
@@ -27,12 +28,15 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="row empty-bag-row">
+                    <div class="col-lg-12 mb-3">
+                        <div class="title">
+                            <h4>Ձեր զամբյուղը դատարկ է</h4>
+                        </div>
+                    </div>
                     <div class="col-lg-7">
                         <div class="empty-bag">
                             <div class="empty-bag__text">
-                                <div class="title">
-                                    <h4>Ձեր զամբյուղը դատարկ է</h4>
-                                </div>
+                            
                                 <div class="note">
                                     <p>Դուք դեռ ոչ մի ապրանք չեք ավելացրել: Վերլուծություններ բաժինը կօգնի ձեզ գտնել անհրաժեշտ հետազոտությունները:</p>
                                 </div>
@@ -42,7 +46,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 order-first order-lg-last mb-5 mb-lg-0">
                         <div class="empty-bag__icon-wrapper">
                             <div class="empty-bag__icon">
                                 <img src="/images/icons/bag-empty.png" alt="">
@@ -51,11 +55,13 @@
                     </div>
                 </div>
                 <div class="row has-item-row">
+                    <div class="col-lg-12">
+                        <div class="title">
+                            <h4>Զամբյուղ</h4>
+                        </div>
+                    </div>
                     <div class="col-lg-6">
-                        <div class="bag-with-item__wrapper">
-                            <div class="title">
-                                <h4>Զամբյուղ</h4>
-                            </div>
+                        <div class="bag-with-item__wrapper">                        
                             <div class="remove-all">
                                 <span>Մաքրել ամբողջը</span>
                             </div>
@@ -159,13 +165,11 @@
                                     <form>
                                         <input type="text" placeholder="Անուն Ազգանուն*">
                                         <div class="contact-us__item-select">
-                                            <label class="contact-us__item-select-label">
-                                                <input class="active-value" value="" disabled/>
-                                                <span class="_icon-chevrone-down"></span>
-                                            </label>
-                                            <ul>
-
-                                            </ul>
+                                            <div class="active-value">
+                                                <span class="active-value__text"></span>
+                                                <span class="_icon-chevrone-down select-box__icon"></span>
+                                            </div>                    
+                                            <ul></ul>
                                         </div>
                                         <div class="date-picker">
                                             <div class="row">
@@ -217,11 +221,46 @@
                 </div>
             </div>
         </div>
+        <div class="row contact-us__info-block">
+            <div class="col-lg-4">
+                <div class="contact-us__item">
+                    <div class="contact-us__item-img">
+                        <img src="/images/icons/branch.png" alt="">
+                    </div>
+                    <div class="contact-us__item-select">
+                        <div class="active-value">
+                            <span class="active-value__text"></span>
+                            <span class="_icon-chevrone-down select-box__icon"></span>
+                        </div>                    
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-us__item">
+                    <div class="contact-us__item-img">
+                        <img src="/images/icons/phone.png" alt="">
+                    </div>
+                    <div class="contact-us__item-info">
+                        Հեռ.: <span class="info-tel"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-us__item">
+                    <div class="contact-us__item-img">
+                        <img src="/images/icons/mail.png" alt="">
+                    </div>
+                    <div class="contact-us__item-info">
+                        Email: <span class="info-email"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
-@@include('./html-components/_research-section.html')
-@@include('./html-components/_footer.html')
 
+@@include('./html-components/_footer.html')
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
