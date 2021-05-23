@@ -30,7 +30,6 @@
     h1{
       font-size: 45px;
       font-weight: 700;
-/*      line-height: 91px;*/
     }
     h5{
       font-size: 18px;
@@ -50,6 +49,7 @@
       justify-content: flex-start;
       a{
         @extend %styled-links;
+        padding: 20px;
         color: $white;
         margin-top: 20px;
       }

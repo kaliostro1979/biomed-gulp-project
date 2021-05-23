@@ -7028,7 +7028,6 @@ fieldset:disabled .btn {
 .slider-text h1 {
   font-size: 45px;
   font-weight: 700;
-  /*      line-height: 91px;*/
 }
 
 .slider-text h5 {
@@ -7052,6 +7051,7 @@ fieldset:disabled .btn {
 }
 
 .slider-text-link a {
+  padding: 20px;
   color: #ffffff;
   margin-top: 20px;
 }
