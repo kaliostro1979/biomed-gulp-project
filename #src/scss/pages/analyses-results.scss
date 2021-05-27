@@ -121,6 +121,9 @@
         .bag-icon{
           width: 30px;
           margin-left: 10px;
+          svg{
+            fill: $white;
+          }
         }
       }
     }

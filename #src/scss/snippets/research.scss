@@ -17,12 +17,10 @@
       margin: 0 auto 30px;
       padding-top: 160px;
       position: relative;
-      picture{
-        img{
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-        }
+      svg{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
     &__title{

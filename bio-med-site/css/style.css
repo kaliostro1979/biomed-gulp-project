@@ -7297,6 +7297,10 @@ fieldset:disabled .btn {
   margin-left: 10px;
 }
 
+.analyzes-products__inner-item__info .options .add-to__cart-btn-icon svg {
+  fill: #ffffff;
+}
+
 .analyzes-products__show-more {
   padding-top: 20px;
   text-align: right;
@@ -7331,7 +7335,7 @@ fieldset:disabled .btn {
   position: relative;
 }
 
-.research-item__img picture img {
+.research-item__img svg {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -7887,6 +7891,10 @@ fieldset:disabled .btn {
 .analyses-item .options .add-to__cart-btn .bag-icon {
   width: 30px;
   margin-left: 10px;
+}
+
+.analyses-item .options .add-to__cart-btn .bag-icon svg {
+  fill: #ffffff;
 }
 
 .about-us__section {
